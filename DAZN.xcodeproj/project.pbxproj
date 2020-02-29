@@ -24,6 +24,8 @@
 		D1D94625240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94623240AA65100E9CCB8 /* DefaultDropDownItemView.swift */; };
 		D1D94627240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */; };
 		D1D94628240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */; };
+		D1D9462C240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */; };
+		D1D9462D240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		D1D9461F240A9FDD00E9CCB8 /* DropDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownItem.swift; sourceTree = "<group>"; };
 		D1D94623240AA65100E9CCB8 /* DefaultDropDownItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDropDownItemView.swift; sourceTree = "<group>"; };
 		D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultDropDownItemView.xib; sourceTree = "<group>"; };
+		D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,7 @@
 		D1D9462A240AAC2400E9CCB8 /* Master */ = {
 			isa = PBXGroup;
 			children = (
+				D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */,
 			);
 			path = Master;
 			sourceTree = "<group>";
@@ -269,6 +273,7 @@
 				D1D9461D240A9E1A00E9CCB8 /* DropDownView.swift in Sources */,
 				D1D94620240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
 				D1D945F4240A9D3F00E9CCB8 /* AppDelegate.swift in Sources */,
+				D1D9462C240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */,
 				D1D945F6240A9D3F00E9CCB8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D9462D240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */,
 				D1D94625240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */,
 				D1D94621240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
 				D1D9460B240A9D4100E9CCB8 /* DAZNTests.swift in Sources */,
