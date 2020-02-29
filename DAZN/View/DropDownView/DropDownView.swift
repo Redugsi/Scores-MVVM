@@ -17,10 +17,12 @@ struct DropDownViewModel {
 }
 
 class DropDownView: UIView {
-
+    
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var stackView: UIStackView!
+    
+    var delegate: DropDownViewDelegate?
     
     var viewModel: DropDownViewModel? {
         didSet {
@@ -69,7 +71,17 @@ class DropDownView: UIView {
     
     @objc
     private func didItemTap(_ recognizer: UITapGestureRecognizer) {
-        print("Tap Item")
+        guard let selectedIndex = recognizer.view?.tag, let viewModel = viewModel else {
+            return
+        }
+        
+        guard selectedIndex < viewModel.dropDownItemViewModels.count else {
+            return
+        }
+        
+        let dropItemType = viewModel.dropDownItemViewModels[selectedIndex]
+        delegate?.onItemClicked(type: dropItemType, index: selectedIndex)
+        hide()
     }
     
     private func clearStackView() {
@@ -80,10 +92,11 @@ class DropDownView: UIView {
     
     func fillStackView(with types: [DropDownItemType]) {
         stackView.isUserInteractionEnabled = true
-        types.forEach {
-            let itemView = createView(type: $0)
+        for (index, element) in types.enumerated(){
+            let itemView = createView(type: element)
             itemView.isUserInteractionEnabled = true
             itemView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didItemTap)))
+            itemView.tag = index
             stackView.addArrangedSubview(itemView)
         }
     }
@@ -91,6 +104,12 @@ class DropDownView: UIView {
     func toggle() {
         stackView.arrangedSubviews.dropFirst().forEach {
             $0.isHidden = !$0.isHidden
+        }
+    }
+    
+    private func hide() {
+        stackView.arrangedSubviews.dropFirst().forEach {
+            $0.isHidden = true
         }
     }
 }

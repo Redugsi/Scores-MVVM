@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterViewController: UIViewController {
+final class MasterViewController: UIViewController {
 
     @IBOutlet weak var dropDownView: DropDownView!
     
@@ -20,28 +20,18 @@ class MasterViewController: UIViewController {
         let newsViewModel = DefaultDropDownItemViewModel(title: "News")
         let scoresViewModel = DefaultDropDownItemViewModel(title: "Scores")
         
+        dropDownView.delegate = self
         dropDownView.viewModel = DropDownViewModel(dropDownItemViewModels: [.standart(viewModel: newsViewModel),
                                                                             .standart(viewModel: scoresViewModel)])
-        testView.isUserInteractionEnabled = true
-        testView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didItemTap)))
     }
-    
-    
-    @objc
-    private func didItemTap(_ recognizer: UITapGestureRecognizer) {
-        print("View Tap")
-        
+}
+
+extension MasterViewController: DropDownViewDelegate {
+    func onItemClicked(type: DropDownItemType, index: Int) {
+        print("index \(index)")
+        switch type {
+        case .standart(let viewModel):
+            print(viewModel.title)
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
