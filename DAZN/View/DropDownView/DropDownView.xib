@@ -25,8 +25,9 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDP-5K-NeQ">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_drop_down_filled" translatesAutoresizingMaskIntoConstraints="NO" id="jox-H0-lqr">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_down_white" translatesAutoresizingMaskIntoConstraints="NO" id="jox-H0-lqr">
                                     <rect key="frame" x="350" y="0.0" width="64" height="64"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="64" id="KZN-MS-R1F"/>
                                         <constraint firstAttribute="width" constant="64" id="cKY-by-h1U"/>
@@ -57,7 +58,7 @@
         </view>
     </objects>
     <resources>
-        <image name="icon_drop_down_filled" width="64" height="64"/>
+        <image name="icon_down_white" width="64" height="64"/>
         <namedColor name="color_smoke">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

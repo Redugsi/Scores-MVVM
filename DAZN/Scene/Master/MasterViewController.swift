@@ -28,7 +28,6 @@ final class MasterViewController: UIViewController {
 
 extension MasterViewController: DropDownViewDelegate {
     func onItemClicked(type: DropDownItemType, index: Int) {
-        print("index \(index)")
         switch type {
         case .standart(let viewModel):
             print(viewModel.title)
