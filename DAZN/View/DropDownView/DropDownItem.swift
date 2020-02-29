@@ -12,6 +12,7 @@ protocol DropDownItemCreateProtocol {
     func createView(type: DropDownItemType) -> UIView
 }
 
+//Populate when new View created
 enum DropDownItemType {
     case standart(viewModel: DefaultDropDownItemViewModel)
 }

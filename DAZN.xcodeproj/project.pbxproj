@@ -150,6 +150,8 @@
 		D1D94629240AAC1700E9CCB8 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				D1D9462F240AC60A00E9CCB8 /* News */,
+				D1D9462E240AC5F500E9CCB8 /* ScoresStandings */,
 				D1D9462A240AAC2400E9CCB8 /* Master */,
 			);
 			path = Scene;
@@ -161,6 +163,20 @@
 				D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */,
 			);
 			path = Master;
+			sourceTree = "<group>";
+		};
+		D1D9462E240AC5F500E9CCB8 /* ScoresStandings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScoresStandings;
+			sourceTree = "<group>";
+		};
+		D1D9462F240AC60A00E9CCB8 /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

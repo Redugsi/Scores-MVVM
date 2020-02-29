@@ -22,6 +22,8 @@ class DropDownView: UIView {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var stackView: UIStackView!
     
+    let choosedColor = UIColor(named: "color_blue")
+    
     var delegate: DropDownViewDelegate?
     
     var viewModel: DropDownViewModel? {
@@ -59,29 +61,9 @@ class DropDownView: UIView {
         imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didImageTap)))
     }
     
-    @objc
-    private func didImageTap(_ recognizer: UITapGestureRecognizer) {
-        toggle()
-    }
-    
     private func initView(with viewModel: DropDownViewModel) {
         clearStackView()
         fillStackView(with: viewModel.dropDownItemViewModels)
-    }
-    
-    @objc
-    private func didItemTap(_ recognizer: UITapGestureRecognizer) {
-        guard let selectedIndex = recognizer.view?.tag, let viewModel = viewModel else {
-            return
-        }
-        
-        guard selectedIndex < viewModel.dropDownItemViewModels.count else {
-            return
-        }
-        
-        let dropItemType = viewModel.dropDownItemViewModels[selectedIndex]
-        delegate?.onItemClicked(type: dropItemType, index: selectedIndex)
-        toggle()
     }
     
     private func clearStackView() {
@@ -102,9 +84,24 @@ class DropDownView: UIView {
         }
     }
     
-    func setImageViewColor() {
-        let isHidden = stackView.arrangedSubviews.dropFirst().first(where: { $0.isHidden }) != nil
-        imageView.backgroundColor = isHidden ? UIColor.black : UIColor(named: "color_blue")
+    @objc
+    private func didImageTap(_ recognizer: UITapGestureRecognizer) {
+        toggle()
+    }
+    
+    @objc
+    private func didItemTap(_ recognizer: UITapGestureRecognizer) {
+        guard let selectedIndex = recognizer.view?.tag, let viewModel = viewModel else {
+            return
+        }
+        
+        guard selectedIndex < viewModel.dropDownItemViewModels.count else {
+            return
+        }
+        
+        let dropItemType = viewModel.dropDownItemViewModels[selectedIndex]
+        delegate?.onItemClicked(type: dropItemType, index: selectedIndex)
+        toggle()
     }
     
     func toggle() {
@@ -112,6 +109,11 @@ class DropDownView: UIView {
             $0.isHidden = !$0.isHidden
         }
         setImageViewColor()
+    }
+    
+    func setImageViewColor() {
+        let isHidden = stackView.arrangedSubviews.dropFirst().first(where: { $0.isHidden }) != nil
+        imageView.backgroundColor = isHidden ? UIColor.black : choosedColor
     }
 }
 
