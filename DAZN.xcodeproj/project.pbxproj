@@ -26,6 +26,18 @@
 		D1D94628240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */; };
 		D1D9462C240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */; };
 		D1D9462D240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */; };
+		D1D94631240AC6D700E9CCB8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94630240AC6D700E9CCB8 /* NewsViewController.swift */; };
+		D1D94632240AC6D700E9CCB8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94630240AC6D700E9CCB8 /* NewsViewController.swift */; };
+		D1D94634240AC6E500E9CCB8 /* ScoresStandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94633240AC6E500E9CCB8 /* ScoresStandingsViewController.swift */; };
+		D1D94635240AC6E500E9CCB8 /* ScoresStandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94633240AC6E500E9CCB8 /* ScoresStandingsViewController.swift */; };
+		D1D94639240ACFA700E9CCB8 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D94638240ACFA700E9CCB8 /* News.storyboard */; };
+		D1D9463A240ACFA700E9CCB8 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D94638240ACFA700E9CCB8 /* News.storyboard */; };
+		D1D9463C240ACFD200E9CCB8 /* ScoresStandings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D9463B240ACFD200E9CCB8 /* ScoresStandings.storyboard */; };
+		D1D9463D240ACFD200E9CCB8 /* ScoresStandings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D9463B240ACFD200E9CCB8 /* ScoresStandings.storyboard */; };
+		D1D9463F240AD00E00E9CCB8 /* NewsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9463E240AD00E00E9CCB8 /* NewsBuilder.swift */; };
+		D1D94640240AD00E00E9CCB8 /* NewsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9463E240AD00E00E9CCB8 /* NewsBuilder.swift */; };
+		D1D94642240AD09900E9CCB8 /* ScoresStandingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94641240AD09900E9CCB8 /* ScoresStandingsBuilder.swift */; };
+		D1D94643240AD09900E9CCB8 /* ScoresStandingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94641240AD09900E9CCB8 /* ScoresStandingsBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +68,12 @@
 		D1D94623240AA65100E9CCB8 /* DefaultDropDownItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDropDownItemView.swift; sourceTree = "<group>"; };
 		D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultDropDownItemView.xib; sourceTree = "<group>"; };
 		D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		D1D94630240AC6D700E9CCB8 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		D1D94633240AC6E500E9CCB8 /* ScoresStandingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresStandingsViewController.swift; sourceTree = "<group>"; };
+		D1D94638240ACFA700E9CCB8 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		D1D9463B240ACFD200E9CCB8 /* ScoresStandings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScoresStandings.storyboard; sourceTree = "<group>"; };
+		D1D9463E240AD00E00E9CCB8 /* NewsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBuilder.swift; sourceTree = "<group>"; };
+		D1D94641240AD09900E9CCB8 /* ScoresStandingsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresStandingsBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,7 @@
 			children = (
 				D1D94615240A9D6100E9CCB8 /* View */,
 				D1D94629240AAC1700E9CCB8 /* Scene */,
+				D1D94644240AD87000E9CCB8 /* API */,
 				D1D945F3240A9D3F00E9CCB8 /* AppDelegate.swift */,
 				D1D945F5240A9D3F00E9CCB8 /* SceneDelegate.swift */,
 				D1D945F7240A9D3F00E9CCB8 /* ViewController.swift */,
@@ -168,6 +187,9 @@
 		D1D9462E240AC5F500E9CCB8 /* ScoresStandings */ = {
 			isa = PBXGroup;
 			children = (
+				D1D94633240AC6E500E9CCB8 /* ScoresStandingsViewController.swift */,
+				D1D9463B240ACFD200E9CCB8 /* ScoresStandings.storyboard */,
+				D1D94641240AD09900E9CCB8 /* ScoresStandingsBuilder.swift */,
 			);
 			path = ScoresStandings;
 			sourceTree = "<group>";
@@ -175,8 +197,26 @@
 		D1D9462F240AC60A00E9CCB8 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				D1D94630240AC6D700E9CCB8 /* NewsViewController.swift */,
+				D1D94638240ACFA700E9CCB8 /* News.storyboard */,
+				D1D9463E240AD00E00E9CCB8 /* NewsBuilder.swift */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		D1D94644240AD87000E9CCB8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D1D94645240AD8DA00E9CCB8 /* Model */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D1D94645240AD8DA00E9CCB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D94600240A9D4100E9CCB8 /* LaunchScreen.storyboard in Resources */,
+				D1D94639240ACFA700E9CCB8 /* News.storyboard in Resources */,
 				D1D9461B240A9E1A00E9CCB8 /* DropDownView.xib in Resources */,
 				D1D945FD240A9D4100E9CCB8 /* Assets.xcassets in Resources */,
+				D1D9463C240ACFD200E9CCB8 /* ScoresStandings.storyboard in Resources */,
 				D1D94627240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */,
 				D1D945FB240A9D3F00E9CCB8 /* Main.storyboard in Resources */,
 			);
@@ -273,7 +315,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D94628240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */,
+				D1D9463A240ACFA700E9CCB8 /* News.storyboard in Resources */,
 				D1D9461C240A9E1A00E9CCB8 /* DropDownView.xib in Resources */,
+				D1D9463D240ACFD200E9CCB8 /* ScoresStandings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,10 +331,14 @@
 				D1D94624240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */,
 				D1D945F8240A9D3F00E9CCB8 /* ViewController.swift in Sources */,
 				D1D9461D240A9E1A00E9CCB8 /* DropDownView.swift in Sources */,
+				D1D94634240AC6E500E9CCB8 /* ScoresStandingsViewController.swift in Sources */,
 				D1D94620240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
 				D1D945F4240A9D3F00E9CCB8 /* AppDelegate.swift in Sources */,
 				D1D9462C240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */,
 				D1D945F6240A9D3F00E9CCB8 /* SceneDelegate.swift in Sources */,
+				D1D94642240AD09900E9CCB8 /* ScoresStandingsBuilder.swift in Sources */,
+				D1D9463F240AD00E00E9CCB8 /* NewsBuilder.swift in Sources */,
+				D1D94631240AC6D700E9CCB8 /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,11 +346,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D94640240AD00E00E9CCB8 /* NewsBuilder.swift in Sources */,
 				D1D9462D240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */,
 				D1D94625240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */,
 				D1D94621240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
+				D1D94632240AC6D700E9CCB8 /* NewsViewController.swift in Sources */,
 				D1D9460B240A9D4100E9CCB8 /* DAZNTests.swift in Sources */,
 				D1D9461E240A9E1A00E9CCB8 /* DropDownView.swift in Sources */,
+				D1D94635240AC6E500E9CCB8 /* ScoresStandingsViewController.swift in Sources */,
+				D1D94643240AD09900E9CCB8 /* ScoresStandingsBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

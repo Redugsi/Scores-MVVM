@@ -16,7 +16,7 @@ struct DropDownViewModel {
     var dropDownItemViewModels: [DropDownItemType]
 }
 
-class DropDownView: UIView {
+final class DropDownView: UIView {
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var imageView: UIImageView!

@@ -11,26 +11,47 @@ import UIKit
 final class MasterViewController: UIViewController {
 
     @IBOutlet weak var dropDownView: DropDownView!
+    @IBOutlet weak var containerView: UIView!
     
-    @IBOutlet weak var testView: UIView!
+    weak var newsViewController: NewsViewController!
+    weak var scoresStandingsViewController: ScoresStandingsViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.bringSubviewToFront(dropDownView)
-        
+        setupChildViewControllers()
+        setupDropDownView()
+    }
+    
+    private func setupChildViewControllers() {
+        newsViewController = NewsBuilder.build()
+        scoresStandingsViewController = ScoresStandingsBuilder.build()
+        addViewController(childViewController: scoresStandingsViewController)
+        addViewController(childViewController: newsViewController)
+    }
+    
+    private func setupDropDownView() {
         let newsViewModel = DefaultDropDownItemViewModel(title: "News")
         let scoresViewModel = DefaultDropDownItemViewModel(title: "Scores")
         
         dropDownView.delegate = self
         dropDownView.viewModel = DropDownViewModel(dropDownItemViewModels: [.standart(viewModel: newsViewModel),
                                                                             .standart(viewModel: scoresViewModel)])
+        view.bringSubviewToFront(dropDownView)
+    }
+    
+    private func addViewController(childViewController: UIViewController) {
+        self.addChild(childViewController)
+        containerView.addSubview(childViewController.view)
+        childViewController.view.frame = containerView.bounds
+        childViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        childViewController.didMove(toParent: self)
     }
 }
 
 extension MasterViewController: DropDownViewDelegate {
     func onItemClicked(type: DropDownItemType, index: Int) {
-        switch type {
-        case .standart(let viewModel):
-            print(viewModel.title)
+        for(loopIndex, element) in containerView!.subviews.enumerated() {
+            element.isHidden = loopIndex == index
         }
     }
 }
