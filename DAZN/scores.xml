@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gsmrs version="2.0" sport="soccer" lang="en" last_generated="2012-09-21 11:52:12">
+  <method method_id="11" name="get_matches_live">
+    <parameter name="date" value="2012-09-19"/>
+    <parameter name="detailed" value="no"/>
+    <parameter name="id" value="7238"/>
+    <parameter name="lang" value="en"/>
+    <parameter name="minutes" value="no"/>
+    <parameter name="now_playing" value="no"/>
+    <parameter name="type" value="season"/>
+  </method>
+  <competition competition_id="10" name="UEFA Champions League" teamtype="default" display_order="20" type="club" area_id="7" area_name="Europe" last_updated="2012-09-19 22:59:51" soccertype="default">
+    <season season_id="7238" name="2012/2013" start_date="2012-07-03" end_date="2013-05-25" service_level="0" last_updated="2012-09-20 13:26:45">
+      <round round_id="17916" name="Group stage" start_date="2012-09-18" end_date="2012-12-05" type="table" groups="8" has_outgroup_matches="no" last_updated="2012-09-20 13:26:45">
+        <group group_id="5226" name="Group E" details="" winner="" last_updated="2012-09-20 13:26:45">
+          <match match_id="1388658" date_utc="2012-09-19" time_utc="18:45:00" date_london="2012-09-19" time_london="19:45:00" team_A_id="661" team_A_name="Chelsea" team_A_country="ENG" team_B_id="1242" team_B_name="Juventus" team_B_country="ITA" status="Playing" gameweek="1" winner="" fs_A="0" fs_B="3" hts_A="" hts_B="" ets_A="" ets_B="" ps_A="" ps_B="" last_updated="2012-09-20 13:26:45"/>
+          <match match_id="1388722" date_utc="2012-09-19" time_utc="18:45:00" date_london="2012-09-19" time_london="19:45:00" team_A_id="2254" team_A_name="Shakhtar Donetsk" team_A_country="UKR" team_B_id="606" team_B_name="Nordsjælland" team_B_country="DNK" status="Playing" gameweek="1" winner="" fs_A="0" fs_B="1" hts_A="" hts_B="" ets_A="" ets_B="" ps_A="" ps_B="" last_updated="2012-09-19 22:52:06"/>
+        </group>
+        <group group_id="5227" name="Group F" details="" winner="" last_updated="2012-09-20 12:43:11">
+          <match match_id="1388723" date_utc="2012-09-19" time_utc="18:45:00" date_london="2012-09-19" time_london="19:45:00" team_A_id="895" team_A_name="Lille" team_A_country="FRA" team_B_id="200" team_B_name="BATE" team_B_country="BLR" status="Playing" gameweek="1" winner="" fs_A="0" fs_B="3" hts_A="" hts_B="" ets_A="" ets_B="" ps_A="" ps_B="" last_updated="2012-09-19 22:56:46"/>
+          <match match_id="1388724" date_utc="2012-09-19" time_utc="18:45:00" date_london="2012-09-19" time_london="19:45:00" team_A_id="961" team_A_name="Bayern München" team_A_country="DEU" team_B_id="2015" team_B_name="Valencia" team_B_country="ESP" status="Playing" gameweek="1" winner="" fs_A="0" fs_B="3" hts_A="" hts_B="" ets_A="" ets_B="" ps_A="" ps_B="" last_updated="2012-09-20 12:43:11"/>
+        </group>
+        <group group_id="5228" name="Group G" details="" winner="" last_updated="2012-09-19 22:51:23">
+          <match match_id="1388646" date_utc="2012-09-19" time_utc="18:45:00" date_london="2012-09-19" time_london="19:45:00" team_A_id="2017" team_A_name="Barcelona" team_A_country="ESP" team_B_id="1844" team_B_name="Spartak Moskva" team_B_country="RUS" status="Playing" gameweek="1" winner="" fs_A="0" fs_B="3" hts_A="" hts_B="" ets_A="" ets_B="" ps_A="" ps_B="" last_updated="2012-09-19 22:51:23"/>
+          <match match_id="1388725" date_utc="2012-09-19" time_utc="18:45:00" date_london="2012-09-19" time_london="19:45:00" team_A_id="1898" team_A_name="Celtic" team_A_country="SCO" team_B_id="1679" team_B_name="Benfica" team_B_country="PRT" status="Playing" gameweek="1" winner="" fs_A="0" fs_B="3" hts_A="" hts_B="" ets_A="" ets_B="" ps_A="" ps_B="" last_updated="2012-09-19 22:49:52"/>
+        </group>
+        <group group_id="5229" name="Group H" details="" winner="" last_updated="2012-09-19 22:59:51">
+          <match match_id="1388664" date_utc="2012-09-19" time_utc="18:45:00" date_london="2012-09-19" time_london="19:45:00" team_A_id="662" team_A_name="Manchester United" team_A_country="ENG" team_B_id="2217" team_B_name="Galatasaray" team_B_country="TUR" status="Playing" gameweek="1" winner="" fs_A="0" fs_B="3" hts_A="" hts_B="" ets_A="" ets_B="" ps_A="" ps_B="" last_updated="2012-09-19 22:53:37"/>
+          <match match_id="1388726" date_utc="2012-09-19" time_utc="18:45:00" date_london="2012-09-19" time_london="19:45:00" team_A_id="1682" team_A_name="Sporting Braga" team_A_country="PRT" team_B_id="1824" team_B_name="CFR Cluj" team_B_country="ROU" status="Playing" gameweek="1" winner="" fs_A="0" fs_B="3" hts_A="" hts_B="" ets_A="" ets_B="" ps_A="" ps_B="" last_updated="2012-09-19 22:59:51"/>
+        </group>
+      </round>
+    </season>
+  </competition>
+</gsmrs>
