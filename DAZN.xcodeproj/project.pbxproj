@@ -14,6 +14,16 @@
 		D1D945FD240A9D4100E9CCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1D945FC240A9D4100E9CCB8 /* Assets.xcassets */; };
 		D1D94600240A9D4100E9CCB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D945FE240A9D4100E9CCB8 /* LaunchScreen.storyboard */; };
 		D1D9460B240A9D4100E9CCB8 /* DAZNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9460A240A9D4100E9CCB8 /* DAZNTests.swift */; };
+		D1D9461B240A9E1A00E9CCB8 /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94619240A9E1A00E9CCB8 /* DropDownView.xib */; };
+		D1D9461C240A9E1A00E9CCB8 /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94619240A9E1A00E9CCB8 /* DropDownView.xib */; };
+		D1D9461D240A9E1A00E9CCB8 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9461A240A9E1A00E9CCB8 /* DropDownView.swift */; };
+		D1D9461E240A9E1A00E9CCB8 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9461A240A9E1A00E9CCB8 /* DropDownView.swift */; };
+		D1D94620240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9461F240A9FDD00E9CCB8 /* DropDownItem.swift */; };
+		D1D94621240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9461F240A9FDD00E9CCB8 /* DropDownItem.swift */; };
+		D1D94624240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94623240AA65100E9CCB8 /* DefaultDropDownItemView.swift */; };
+		D1D94625240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94623240AA65100E9CCB8 /* DefaultDropDownItemView.swift */; };
+		D1D94627240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */; };
+		D1D94628240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +48,11 @@
 		D1D94606240A9D4100E9CCB8 /* DAZNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DAZNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D9460A240A9D4100E9CCB8 /* DAZNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAZNTests.swift; sourceTree = "<group>"; };
 		D1D9460C240A9D4100E9CCB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D94619240A9E1A00E9CCB8 /* DropDownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
+		D1D9461A240A9E1A00E9CCB8 /* DropDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		D1D9461F240A9FDD00E9CCB8 /* DropDownItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownItem.swift; sourceTree = "<group>"; };
+		D1D94623240AA65100E9CCB8 /* DefaultDropDownItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDropDownItemView.swift; sourceTree = "<group>"; };
+		D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultDropDownItemView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +94,8 @@
 		D1D945F2240A9D3F00E9CCB8 /* DAZN */ = {
 			isa = PBXGroup;
 			children = (
+				D1D94615240A9D6100E9CCB8 /* View */,
+				D1D94629240AAC1700E9CCB8 /* Scene */,
 				D1D945F3240A9D3F00E9CCB8 /* AppDelegate.swift */,
 				D1D945F5240A9D3F00E9CCB8 /* SceneDelegate.swift */,
 				D1D945F7240A9D3F00E9CCB8 /* ViewController.swift */,
@@ -97,6 +114,49 @@
 				D1D9460C240A9D4100E9CCB8 /* Info.plist */,
 			);
 			path = DAZNTests;
+			sourceTree = "<group>";
+		};
+		D1D94615240A9D6100E9CCB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1D94616240A9D7100E9CCB8 /* DropDownView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1D94616240A9D7100E9CCB8 /* DropDownView */ = {
+			isa = PBXGroup;
+			children = (
+				D1D94622240AA64500E9CCB8 /* DefaultDropDownItemView */,
+				D1D9461A240A9E1A00E9CCB8 /* DropDownView.swift */,
+				D1D94619240A9E1A00E9CCB8 /* DropDownView.xib */,
+				D1D9461F240A9FDD00E9CCB8 /* DropDownItem.swift */,
+			);
+			path = DropDownView;
+			sourceTree = "<group>";
+		};
+		D1D94622240AA64500E9CCB8 /* DefaultDropDownItemView */ = {
+			isa = PBXGroup;
+			children = (
+				D1D94623240AA65100E9CCB8 /* DefaultDropDownItemView.swift */,
+				D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */,
+			);
+			path = DefaultDropDownItemView;
+			sourceTree = "<group>";
+		};
+		D1D94629240AAC1700E9CCB8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				D1D9462A240AAC2400E9CCB8 /* Master */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		D1D9462A240AAC2400E9CCB8 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Master;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +241,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D94600240A9D4100E9CCB8 /* LaunchScreen.storyboard in Resources */,
+				D1D9461B240A9E1A00E9CCB8 /* DropDownView.xib in Resources */,
 				D1D945FD240A9D4100E9CCB8 /* Assets.xcassets in Resources */,
+				D1D94627240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */,
 				D1D945FB240A9D3F00E9CCB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +252,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D94628240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */,
+				D1D9461C240A9E1A00E9CCB8 /* DropDownView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D94624240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */,
 				D1D945F8240A9D3F00E9CCB8 /* ViewController.swift in Sources */,
+				D1D9461D240A9E1A00E9CCB8 /* DropDownView.swift in Sources */,
+				D1D94620240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
 				D1D945F4240A9D3F00E9CCB8 /* AppDelegate.swift in Sources */,
 				D1D945F6240A9D3F00E9CCB8 /* SceneDelegate.swift in Sources */,
 			);
@@ -210,7 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D94625240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */,
+				D1D94621240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
 				D1D9460B240A9D4100E9CCB8 /* DAZNTests.swift in Sources */,
+				D1D9461E240A9E1A00E9CCB8 /* DropDownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
