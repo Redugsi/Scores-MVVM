@@ -17,11 +17,18 @@ extension UIImageView {
             return
         }
         
-        guard let url = URL(string: urlString) else { return }
+        guard let url = URL(string: urlString) else {
+            #if DEBUG
+            print("Couldn't find image url")
+            #endif
+            return
+        }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
+                #if DEBUG
                 print("Couldn't download image: ", error)
+                #endif
                 return
             }
             
@@ -33,6 +40,5 @@ extension UIImageView {
                 self.image = image
             }
         }.resume()
-
     }
 }

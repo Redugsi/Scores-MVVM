@@ -19,7 +19,7 @@ final class NewsDetailViewModel: NewsDetailViewModelProtocol {
     
     func loadNews() {
         guard let link = newsLink, link != "", let url = URL(string: link) else {
-            notify(.showError(.urlNotFound("Can not find")))
+            notify(.showError(.urlNotFound("Wrong Url")))
             return
         }
         

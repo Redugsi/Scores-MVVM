@@ -16,6 +16,10 @@
 		D1D90F75240BB66B003D7E18 /* NewsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F73240BB66B003D7E18 /* NewsPresentation.swift */; };
 		D1D90F77240BBC15003D7E18 /* NewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F76240BBC15003D7E18 /* NewsDetailViewModel.swift */; };
 		D1D90F78240BBC15003D7E18 /* NewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F76240BBC15003D7E18 /* NewsDetailViewModel.swift */; };
+		D1D90F7A240BCEC7003D7E18 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F79240BCEC7003D7E18 /* UIViewController+Loading.swift */; };
+		D1D90F7B240BCEC7003D7E18 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F79240BCEC7003D7E18 /* UIViewController+Loading.swift */; };
+		D1D90F7D240BD66A003D7E18 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7C240BD66A003D7E18 /* UIViewController+Alert.swift */; };
+		D1D90F7E240BD66A003D7E18 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7C240BD66A003D7E18 /* UIViewController+Alert.swift */; };
 		D1D945F4240A9D3F00E9CCB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F3240A9D3F00E9CCB8 /* AppDelegate.swift */; };
 		D1D945F6240A9D3F00E9CCB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F5240A9D3F00E9CCB8 /* SceneDelegate.swift */; };
 		D1D945F8240A9D3F00E9CCB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F7240A9D3F00E9CCB8 /* ViewController.swift */; };
@@ -100,6 +104,8 @@
 		D1D90F6E240BB406003D7E18 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		D1D90F73240BB66B003D7E18 /* NewsPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresentation.swift; sourceTree = "<group>"; };
 		D1D90F76240BBC15003D7E18 /* NewsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewModel.swift; sourceTree = "<group>"; };
+		D1D90F79240BCEC7003D7E18 /* UIViewController+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loading.swift"; sourceTree = "<group>"; };
+		D1D90F7C240BD66A003D7E18 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		D1D945F0240A9D3F00E9CCB8 /* DAZN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAZN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D945F3240A9D3F00E9CCB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1D945F5240A9D3F00E9CCB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -360,6 +366,8 @@
 			isa = PBXGroup;
 			children = (
 				D1D94672240B909100E9CCB8 /* UIImageView+URL.swift */,
+				D1D90F79240BCEC7003D7E18 /* UIViewController+Loading.swift */,
+				D1D90F7C240BD66A003D7E18 /* UIViewController+Alert.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -504,6 +512,8 @@
 				D1D9464A240ADBA800E9CCB8 /* Score.swift in Sources */,
 				D1D94651240ADC0500E9CCB8 /* NewsParser.swift in Sources */,
 				D1D9467C240B941600E9CCB8 /* Error.swift in Sources */,
+				D1D90F7D240BD66A003D7E18 /* UIViewController+Alert.swift in Sources */,
+				D1D90F7A240BCEC7003D7E18 /* UIViewController+Loading.swift in Sources */,
 				D1D945F6240A9D3F00E9CCB8 /* SceneDelegate.swift in Sources */,
 				D1D94642240AD09900E9CCB8 /* ScoresStandingsBuilder.swift in Sources */,
 				D1D9465F240ADFCB00E9CCB8 /* NewsTableViewCell.swift in Sources */,
@@ -525,6 +535,7 @@
 				D1D94660240ADFCB00E9CCB8 /* NewsTableViewCell.swift in Sources */,
 				D1D94625240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */,
 				D1D94621240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
+				D1D90F7B240BCEC7003D7E18 /* UIViewController+Loading.swift in Sources */,
 				D1D90F70240BB406003D7E18 /* NewsViewModel.swift in Sources */,
 				D1D94632240AC6D700E9CCB8 /* NewsViewController.swift in Sources */,
 				D1D94655240ADC1800E9CCB8 /* ScoresStandingParser.swift in Sources */,
@@ -535,6 +546,7 @@
 				D1D9467D240B941600E9CCB8 /* Error.swift in Sources */,
 				D1D94648240ADB6F00E9CCB8 /* News.swift in Sources */,
 				D1D94652240ADC0500E9CCB8 /* NewsParser.swift in Sources */,
+				D1D90F7E240BD66A003D7E18 /* UIViewController+Alert.swift in Sources */,
 				D1D90F75240BB66B003D7E18 /* NewsPresentation.swift in Sources */,
 				D1D9464B240ADBA800E9CCB8 /* Score.swift in Sources */,
 				D1D94680240BA48000E9CCB8 /* ScoresStandingsService.swift in Sources */,

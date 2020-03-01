@@ -37,7 +37,7 @@ extension NewsViewController: NewsViewModelDelegate {
     func handleViewModelOutput(_ output: NewsViewModelOutput) {
         switch output {
         case .setLoading(let isLoading):
-            UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+            showLoader(isLoading: isLoading)
         case .showNews(let presentations):
             self.presentations = presentations
             tableView.reloadData()

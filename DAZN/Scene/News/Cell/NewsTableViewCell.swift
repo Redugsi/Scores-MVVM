@@ -25,14 +25,14 @@ class NewsTableViewCell: UITableViewCell {
     private func initView(with viewModel: NewsPresentation) {
         titleLabel.text = viewModel.title
         dateLabel.text = viewModel.date
-        
+        newsImageView.loadImage(urlString: viewModel.imagePath)
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         titleLabel.text = nil
         dateLabel.text = nil
-        //newsImageView.image = nil
+        newsImageView.image = nil
     }
     
 }

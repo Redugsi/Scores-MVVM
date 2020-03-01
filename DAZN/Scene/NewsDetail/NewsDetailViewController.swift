@@ -12,7 +12,6 @@ import WebKit
 class NewsDetailViewController: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var viewModel: NewsDetailViewModelProtocol! {
         didSet {
@@ -23,6 +22,10 @@ class NewsDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         viewModel.loadNews()
     }
     
@@ -33,13 +36,7 @@ class NewsDetailViewController: UIViewController {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         if keyPath == "loading" {
-            if webView.isLoading {
-                activityIndicator.startAnimating()
-                activityIndicator.isHidden = false
-            } else {
-                activityIndicator.stopAnimating()
-                activityIndicator.isHidden = true
-            }
+            showLoader(isLoading: webView.isLoading)
         }
     }
     
@@ -58,10 +55,12 @@ extension NewsDetailViewController: NewsDetailViewModelDelegate {
         case .showDetail(let request):
             webView.load(request)
         case .dismiss:
-            self.dismiss(animated: true, completion: nil)
+            dismiss(animated: true, completion: nil)
         case .showError(let error):
-            //TODO error Handle
-            print(error)
+            switch error {
+            case .urlNotFound(let description):
+                showAlert(message: description, title: "Error")
+            }
         }
     }
 }
