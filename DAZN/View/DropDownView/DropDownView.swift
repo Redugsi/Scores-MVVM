@@ -18,7 +18,7 @@ struct DropDownViewModel {
 
 final class DropDownView: UIView {
     
-    @IBOutlet var contentView: UIView!
+    @IBOutlet private var contentView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var stackView: UIStackView!
     
@@ -90,7 +90,7 @@ final class DropDownView: UIView {
     }
     
     @objc
-    private func didItemTap(_ recognizer: UITapGestureRecognizer) {
+    func didItemTap(_ recognizer: UITapGestureRecognizer) {
         guard let selectedIndex = recognizer.view?.tag, let viewModel = viewModel else {
             return
         }

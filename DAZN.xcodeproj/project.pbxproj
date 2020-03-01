@@ -8,40 +8,78 @@
 
 /* Begin PBXBuildFile section */
 		D1BEB0DB240C0DBA008B9ADC /* ScoreTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB0DA240C0DBA008B9ADC /* ScoreTableViewCellModel.swift */; };
-		D1BEB0DC240C0DBA008B9ADC /* ScoreTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB0DA240C0DBA008B9ADC /* ScoreTableViewCellModel.swift */; };
 		D1BEB0E1240C1FB3008B9ADC /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB0E0240C1FB3008B9ADC /* String+Date.swift */; };
-		D1BEB0E2240C1FB3008B9ADC /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB0E0240C1FB3008B9ADC /* String+Date.swift */; };
+		D1BEB0E8240C32F2008B9ADC /* NewsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB0E5240C31E0008B9ADC /* NewsViewModelTests.swift */; };
+		D1BEB0EF240C3503008B9ADC /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D9465E240ADFCB00E9CCB8 /* NewsTableViewCell.xib */; };
+		D1BEB0FA240C360F008B9ADC /* NewsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F73240BB66B003D7E18 /* NewsPresentation.swift */; };
+		D1BEB0FB240C360F008B9ADC /* ScorePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F94240BFAA5003D7E18 /* ScorePresentation.swift */; };
+		D1BEB0FC240C360F008B9ADC /* ScoresStandingsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F97240BFAB3003D7E18 /* ScoresStandingsPresentation.swift */; };
+		D1BEB0FD240C3614008B9ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F3240A9D3F00E9CCB8 /* AppDelegate.swift */; };
+		D1BEB0FE240C3614008B9ADC /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F6C240BB0F1003D7E18 /* AppContainer.swift */; };
+		D1BEB0FF240C3617008B9ADC /* DefaultDropDownItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94623240AA65100E9CCB8 /* DefaultDropDownItemView.swift */; };
+		D1BEB100240C3617008B9ADC /* DefaultDropDownItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */; };
+		D1BEB101240C3617008B9ADC /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9461A240A9E1A00E9CCB8 /* DropDownView.swift */; };
+		D1BEB102240C3617008B9ADC /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94619240A9E1A00E9CCB8 /* DropDownView.xib */; };
+		D1BEB103240C3617008B9ADC /* DropDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9461F240A9FDD00E9CCB8 /* DropDownItem.swift */; };
+		D1BEB104240C361B008B9ADC /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9466A240AEBCD00E9CCB8 /* NewsDetailViewController.swift */; };
+		D1BEB105240C361B008B9ADC /* NewsDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9466D240AECAF00E9CCB8 /* NewsDetailBuilder.swift */; };
+		D1BEB106240C361B008B9ADC /* NewsDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F69240BAA1E003D7E18 /* NewsDetailContracts.swift */; };
+		D1BEB107240C361B008B9ADC /* NewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F76240BBC15003D7E18 /* NewsDetailViewModel.swift */; };
+		D1BEB108240C361F008B9ADC /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9465D240ADFCB00E9CCB8 /* NewsTableViewCell.swift */; };
+		D1BEB109240C361F008B9ADC /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94630240AC6D700E9CCB8 /* NewsViewController.swift */; };
+		D1BEB10A240C361F008B9ADC /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D94638240ACFA700E9CCB8 /* News.storyboard */; };
+		D1BEB10B240C361F008B9ADC /* NewsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9463E240AD00E00E9CCB8 /* NewsBuilder.swift */; };
+		D1BEB10C240C361F008B9ADC /* NewsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F67240BAA0D003D7E18 /* NewsContracts.swift */; };
+		D1BEB10D240C361F008B9ADC /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F6E240BB406003D7E18 /* NewsViewModel.swift */; };
+		D1BEB10E240C3626008B9ADC /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F9B240C0789003D7E18 /* ScoreTableViewCell.swift */; };
+		D1BEB10F240C3626008B9ADC /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D90F9C240C0789003D7E18 /* ScoreTableViewCell.xib */; };
+		D1BEB110240C3626008B9ADC /* ScoreTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB0DA240C0DBA008B9ADC /* ScoreTableViewCellModel.swift */; };
+		D1BEB111240C3626008B9ADC /* ScoresStandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94633240AC6E500E9CCB8 /* ScoresStandingsViewController.swift */; };
+		D1BEB112240C3626008B9ADC /* ScoresStandings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D9463B240ACFD200E9CCB8 /* ScoresStandings.storyboard */; };
+		D1BEB113240C3626008B9ADC /* ScoresStandingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94641240AD09900E9CCB8 /* ScoresStandingsBuilder.swift */; };
+		D1BEB114240C3626008B9ADC /* ScoresStandingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F8E240BF94A003D7E18 /* ScoresStandingsViewModel.swift */; };
+		D1BEB115240C3626008B9ADC /* ScoresStandingsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F91240BF959003D7E18 /* ScoresStandingsContracts.swift */; };
+		D1BEB116240C362E008B9ADC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */; };
+		D1BEB117240C362E008B9ADC /* MasterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7F240BDB6F003D7E18 /* MasterBuilder.swift */; };
+		D1BEB118240C362E008B9ADC /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F82240BDB7C003D7E18 /* MasterViewModel.swift */; };
+		D1BEB119240C362E008B9ADC /* MasterContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F85240BDB8E003D7E18 /* MasterContracts.swift */; };
+		D1BEB11A240C3632008B9ADC /* Master.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D945F9240A9D3F00E9CCB8 /* Master.storyboard */; };
+		D1BEB11D240C3639008B9ADC /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94646240ADB6F00E9CCB8 /* News.swift */; };
+		D1BEB11E240C3639008B9ADC /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94649240ADBA800E9CCB8 /* Score.swift */; };
+		D1BEB11F240C3639008B9ADC /* ScoresStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9464C240ADBCB00E9CCB8 /* ScoresStandings.swift */; };
+		D1BEB120240C363C008B9ADC /* NewsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94650240ADC0500E9CCB8 /* NewsParser.swift */; };
+		D1BEB121240C363C008B9ADC /* ScoresStandingParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94653240ADC1800E9CCB8 /* ScoresStandingParser.swift */; };
+		D1BEB122240C363C008B9ADC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94678240B937900E9CCB8 /* Result.swift */; };
+		D1BEB123240C363C008B9ADC /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9467B240B941600E9CCB8 /* Error.swift */; };
+		D1BEB124240C3640008B9ADC /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94675240B92A200E9CCB8 /* NewsService.swift */; };
+		D1BEB125240C3640008B9ADC /* ScoresStandingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9467E240BA48000E9CCB8 /* ScoresStandingsService.swift */; };
+		D1BEB126240C366E008B9ADC /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94672240B909100E9CCB8 /* UIImageView+URL.swift */; };
+		D1BEB127240C366E008B9ADC /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F79240BCEC7003D7E18 /* UIViewController+Loading.swift */; };
+		D1BEB128240C366E008B9ADC /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7C240BD66A003D7E18 /* UIViewController+Alert.swift */; };
+		D1BEB129240C366E008B9ADC /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB0E0240C1FB3008B9ADC /* String+Date.swift */; };
+		D1BEB12C240C37A0008B9ADC /* MockNewsSuccessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB12B240C37A0008B9ADC /* MockNewsSuccessService.swift */; };
+		D1BEB12E240C3F99008B9ADC /* NewsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB12D240C3F99008B9ADC /* NewsViewControllerTests.swift */; };
+		D1BEB130240C4860008B9ADC /* MockNewsFailureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB12F240C4860008B9ADC /* MockNewsFailureService.swift */; };
+		D1BEB135240C4B50008B9ADC /* NewsParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB134240C4B50008B9ADC /* NewsParserTests.swift */; };
+		D1BEB137240C4DB8008B9ADC /* ScoresStandingsParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB136240C4DB8008B9ADC /* ScoresStandingsParserTests.swift */; };
+		D1BEB13B240C4F02008B9ADC /* DropDownViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB13A240C4F02008B9ADC /* DropDownViewTests.swift */; };
 		D1D90F68240BAA0D003D7E18 /* NewsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F67240BAA0D003D7E18 /* NewsContracts.swift */; };
 		D1D90F6A240BAA1E003D7E18 /* NewsDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F69240BAA1E003D7E18 /* NewsDetailContracts.swift */; };
 		D1D90F6D240BB0F1003D7E18 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F6C240BB0F1003D7E18 /* AppContainer.swift */; };
 		D1D90F6F240BB406003D7E18 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F6E240BB406003D7E18 /* NewsViewModel.swift */; };
-		D1D90F70240BB406003D7E18 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F6E240BB406003D7E18 /* NewsViewModel.swift */; };
 		D1D90F74240BB66B003D7E18 /* NewsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F73240BB66B003D7E18 /* NewsPresentation.swift */; };
-		D1D90F75240BB66B003D7E18 /* NewsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F73240BB66B003D7E18 /* NewsPresentation.swift */; };
 		D1D90F77240BBC15003D7E18 /* NewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F76240BBC15003D7E18 /* NewsDetailViewModel.swift */; };
-		D1D90F78240BBC15003D7E18 /* NewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F76240BBC15003D7E18 /* NewsDetailViewModel.swift */; };
 		D1D90F7A240BCEC7003D7E18 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F79240BCEC7003D7E18 /* UIViewController+Loading.swift */; };
-		D1D90F7B240BCEC7003D7E18 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F79240BCEC7003D7E18 /* UIViewController+Loading.swift */; };
 		D1D90F7D240BD66A003D7E18 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7C240BD66A003D7E18 /* UIViewController+Alert.swift */; };
-		D1D90F7E240BD66A003D7E18 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7C240BD66A003D7E18 /* UIViewController+Alert.swift */; };
 		D1D90F80240BDB6F003D7E18 /* MasterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7F240BDB6F003D7E18 /* MasterBuilder.swift */; };
-		D1D90F81240BDB6F003D7E18 /* MasterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7F240BDB6F003D7E18 /* MasterBuilder.swift */; };
 		D1D90F83240BDB7C003D7E18 /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F82240BDB7C003D7E18 /* MasterViewModel.swift */; };
-		D1D90F84240BDB7C003D7E18 /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F82240BDB7C003D7E18 /* MasterViewModel.swift */; };
 		D1D90F86240BDB8E003D7E18 /* MasterContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F85240BDB8E003D7E18 /* MasterContracts.swift */; };
-		D1D90F87240BDB8E003D7E18 /* MasterContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F85240BDB8E003D7E18 /* MasterContracts.swift */; };
 		D1D90F8F240BF94A003D7E18 /* ScoresStandingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F8E240BF94A003D7E18 /* ScoresStandingsViewModel.swift */; };
-		D1D90F90240BF94A003D7E18 /* ScoresStandingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F8E240BF94A003D7E18 /* ScoresStandingsViewModel.swift */; };
 		D1D90F92240BF959003D7E18 /* ScoresStandingsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F91240BF959003D7E18 /* ScoresStandingsContracts.swift */; };
-		D1D90F93240BF959003D7E18 /* ScoresStandingsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F91240BF959003D7E18 /* ScoresStandingsContracts.swift */; };
 		D1D90F95240BFAA5003D7E18 /* ScorePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F94240BFAA5003D7E18 /* ScorePresentation.swift */; };
-		D1D90F96240BFAA5003D7E18 /* ScorePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F94240BFAA5003D7E18 /* ScorePresentation.swift */; };
 		D1D90F98240BFAB3003D7E18 /* ScoresStandingsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F97240BFAB3003D7E18 /* ScoresStandingsPresentation.swift */; };
-		D1D90F99240BFAB3003D7E18 /* ScoresStandingsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F97240BFAB3003D7E18 /* ScoresStandingsPresentation.swift */; };
 		D1D90F9D240C0789003D7E18 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F9B240C0789003D7E18 /* ScoreTableViewCell.swift */; };
-		D1D90F9E240C0789003D7E18 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F9B240C0789003D7E18 /* ScoreTableViewCell.swift */; };
 		D1D90F9F240C0789003D7E18 /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D90F9C240C0789003D7E18 /* ScoreTableViewCell.xib */; };
-		D1D90FA0240C0789003D7E18 /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D90F9C240C0789003D7E18 /* ScoreTableViewCell.xib */; };
 		D1D945F4240A9D3F00E9CCB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F3240A9D3F00E9CCB8 /* AppDelegate.swift */; };
 		D1D945F6240A9D3F00E9CCB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F5240A9D3F00E9CCB8 /* SceneDelegate.swift */; };
 		D1D945F8240A9D3F00E9CCB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F7240A9D3F00E9CCB8 /* ViewController.swift */; };
@@ -49,63 +87,36 @@
 		D1D945FD240A9D4100E9CCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1D945FC240A9D4100E9CCB8 /* Assets.xcassets */; };
 		D1D9460B240A9D4100E9CCB8 /* DAZNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9460A240A9D4100E9CCB8 /* DAZNTests.swift */; };
 		D1D9461B240A9E1A00E9CCB8 /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94619240A9E1A00E9CCB8 /* DropDownView.xib */; };
-		D1D9461C240A9E1A00E9CCB8 /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94619240A9E1A00E9CCB8 /* DropDownView.xib */; };
 		D1D9461D240A9E1A00E9CCB8 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9461A240A9E1A00E9CCB8 /* DropDownView.swift */; };
-		D1D9461E240A9E1A00E9CCB8 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9461A240A9E1A00E9CCB8 /* DropDownView.swift */; };
 		D1D94620240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9461F240A9FDD00E9CCB8 /* DropDownItem.swift */; };
-		D1D94621240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9461F240A9FDD00E9CCB8 /* DropDownItem.swift */; };
 		D1D94624240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94623240AA65100E9CCB8 /* DefaultDropDownItemView.swift */; };
-		D1D94625240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94623240AA65100E9CCB8 /* DefaultDropDownItemView.swift */; };
 		D1D94627240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */; };
-		D1D94628240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94626240AA65B00E9CCB8 /* DefaultDropDownItemView.xib */; };
 		D1D9462C240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */; };
-		D1D9462D240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */; };
 		D1D94631240AC6D700E9CCB8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94630240AC6D700E9CCB8 /* NewsViewController.swift */; };
-		D1D94632240AC6D700E9CCB8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94630240AC6D700E9CCB8 /* NewsViewController.swift */; };
 		D1D94634240AC6E500E9CCB8 /* ScoresStandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94633240AC6E500E9CCB8 /* ScoresStandingsViewController.swift */; };
-		D1D94635240AC6E500E9CCB8 /* ScoresStandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94633240AC6E500E9CCB8 /* ScoresStandingsViewController.swift */; };
 		D1D94639240ACFA700E9CCB8 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D94638240ACFA700E9CCB8 /* News.storyboard */; };
-		D1D9463A240ACFA700E9CCB8 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D94638240ACFA700E9CCB8 /* News.storyboard */; };
 		D1D9463C240ACFD200E9CCB8 /* ScoresStandings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D9463B240ACFD200E9CCB8 /* ScoresStandings.storyboard */; };
-		D1D9463D240ACFD200E9CCB8 /* ScoresStandings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D9463B240ACFD200E9CCB8 /* ScoresStandings.storyboard */; };
 		D1D9463F240AD00E00E9CCB8 /* NewsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9463E240AD00E00E9CCB8 /* NewsBuilder.swift */; };
-		D1D94640240AD00E00E9CCB8 /* NewsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9463E240AD00E00E9CCB8 /* NewsBuilder.swift */; };
 		D1D94642240AD09900E9CCB8 /* ScoresStandingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94641240AD09900E9CCB8 /* ScoresStandingsBuilder.swift */; };
-		D1D94643240AD09900E9CCB8 /* ScoresStandingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94641240AD09900E9CCB8 /* ScoresStandingsBuilder.swift */; };
 		D1D94647240ADB6F00E9CCB8 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94646240ADB6F00E9CCB8 /* News.swift */; };
-		D1D94648240ADB6F00E9CCB8 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94646240ADB6F00E9CCB8 /* News.swift */; };
 		D1D9464A240ADBA800E9CCB8 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94649240ADBA800E9CCB8 /* Score.swift */; };
-		D1D9464B240ADBA800E9CCB8 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94649240ADBA800E9CCB8 /* Score.swift */; };
 		D1D9464D240ADBCB00E9CCB8 /* ScoresStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9464C240ADBCB00E9CCB8 /* ScoresStandings.swift */; };
-		D1D9464E240ADBCB00E9CCB8 /* ScoresStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9464C240ADBCB00E9CCB8 /* ScoresStandings.swift */; };
 		D1D94651240ADC0500E9CCB8 /* NewsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94650240ADC0500E9CCB8 /* NewsParser.swift */; };
-		D1D94652240ADC0500E9CCB8 /* NewsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94650240ADC0500E9CCB8 /* NewsParser.swift */; };
 		D1D94654240ADC1800E9CCB8 /* ScoresStandingParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94653240ADC1800E9CCB8 /* ScoresStandingParser.swift */; };
-		D1D94655240ADC1800E9CCB8 /* ScoresStandingParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94653240ADC1800E9CCB8 /* ScoresStandingParser.swift */; };
 		D1D94658240ADF0C00E9CCB8 /* latestnews.xml in Resources */ = {isa = PBXBuildFile; fileRef = D1D94656240ADF0C00E9CCB8 /* latestnews.xml */; };
 		D1D94659240ADF0C00E9CCB8 /* latestnews.xml in Resources */ = {isa = PBXBuildFile; fileRef = D1D94656240ADF0C00E9CCB8 /* latestnews.xml */; };
 		D1D9465A240ADF0C00E9CCB8 /* scores.xml in Resources */ = {isa = PBXBuildFile; fileRef = D1D94657240ADF0C00E9CCB8 /* scores.xml */; };
 		D1D9465B240ADF0C00E9CCB8 /* scores.xml in Resources */ = {isa = PBXBuildFile; fileRef = D1D94657240ADF0C00E9CCB8 /* scores.xml */; };
 		D1D9465F240ADFCB00E9CCB8 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9465D240ADFCB00E9CCB8 /* NewsTableViewCell.swift */; };
-		D1D94660240ADFCB00E9CCB8 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9465D240ADFCB00E9CCB8 /* NewsTableViewCell.swift */; };
 		D1D94661240ADFCB00E9CCB8 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D9465E240ADFCB00E9CCB8 /* NewsTableViewCell.xib */; };
-		D1D94662240ADFCB00E9CCB8 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D9465E240ADFCB00E9CCB8 /* NewsTableViewCell.xib */; };
 		D1D94668240AEBB400E9CCB8 /* NewsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D94667240AEBB400E9CCB8 /* NewsDetail.storyboard */; };
-		D1D94669240AEBB400E9CCB8 /* NewsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D94667240AEBB400E9CCB8 /* NewsDetail.storyboard */; };
 		D1D9466B240AEBCD00E9CCB8 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9466A240AEBCD00E9CCB8 /* NewsDetailViewController.swift */; };
-		D1D9466C240AEBCD00E9CCB8 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9466A240AEBCD00E9CCB8 /* NewsDetailViewController.swift */; };
 		D1D9466E240AECAF00E9CCB8 /* NewsDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9466D240AECAF00E9CCB8 /* NewsDetailBuilder.swift */; };
-		D1D9466F240AECAF00E9CCB8 /* NewsDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9466D240AECAF00E9CCB8 /* NewsDetailBuilder.swift */; };
 		D1D94673240B909100E9CCB8 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94672240B909100E9CCB8 /* UIImageView+URL.swift */; };
-		D1D94674240B909100E9CCB8 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94672240B909100E9CCB8 /* UIImageView+URL.swift */; };
 		D1D94676240B92A200E9CCB8 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94675240B92A200E9CCB8 /* NewsService.swift */; };
-		D1D94677240B92A200E9CCB8 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94675240B92A200E9CCB8 /* NewsService.swift */; };
 		D1D94679240B937900E9CCB8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94678240B937900E9CCB8 /* Result.swift */; };
-		D1D9467A240B937900E9CCB8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D94678240B937900E9CCB8 /* Result.swift */; };
 		D1D9467C240B941600E9CCB8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9467B240B941600E9CCB8 /* Error.swift */; };
-		D1D9467D240B941600E9CCB8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9467B240B941600E9CCB8 /* Error.swift */; };
 		D1D9467F240BA48000E9CCB8 /* ScoresStandingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9467E240BA48000E9CCB8 /* ScoresStandingsService.swift */; };
-		D1D94680240BA48000E9CCB8 /* ScoresStandingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9467E240BA48000E9CCB8 /* ScoresStandingsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +132,13 @@
 /* Begin PBXFileReference section */
 		D1BEB0DA240C0DBA008B9ADC /* ScoreTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCellModel.swift; sourceTree = "<group>"; };
 		D1BEB0E0240C1FB3008B9ADC /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		D1BEB0E5240C31E0008B9ADC /* NewsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModelTests.swift; sourceTree = "<group>"; };
+		D1BEB12B240C37A0008B9ADC /* MockNewsSuccessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsSuccessService.swift; sourceTree = "<group>"; };
+		D1BEB12D240C3F99008B9ADC /* NewsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewControllerTests.swift; sourceTree = "<group>"; };
+		D1BEB12F240C4860008B9ADC /* MockNewsFailureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsFailureService.swift; sourceTree = "<group>"; };
+		D1BEB134240C4B50008B9ADC /* NewsParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsParserTests.swift; sourceTree = "<group>"; };
+		D1BEB136240C4DB8008B9ADC /* ScoresStandingsParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresStandingsParserTests.swift; sourceTree = "<group>"; };
+		D1BEB13A240C4F02008B9ADC /* DropDownViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownViewTests.swift; sourceTree = "<group>"; };
 		D1D90F67240BAA0D003D7E18 /* NewsContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContracts.swift; sourceTree = "<group>"; };
 		D1D90F69240BAA1E003D7E18 /* NewsDetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailContracts.swift; sourceTree = "<group>"; };
 		D1D90F6C240BB0F1003D7E18 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
@@ -197,6 +215,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1BEB0E3240C2EE0008B9ADC /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				D1BEB0E4240C31BA008B9ADC /* News */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		D1BEB0E4240C31BA008B9ADC /* News */ = {
+			isa = PBXGroup;
+			children = (
+				D1BEB0E5240C31E0008B9ADC /* NewsViewModelTests.swift */,
+				D1BEB12D240C3F99008B9ADC /* NewsViewControllerTests.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		D1BEB12A240C378D008B9ADC /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				D1BEB12B240C37A0008B9ADC /* MockNewsSuccessService.swift */,
+				D1BEB12F240C4860008B9ADC /* MockNewsFailureService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		D1BEB133240C4B44008B9ADC /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				D1BEB134240C4B50008B9ADC /* NewsParserTests.swift */,
+				D1BEB136240C4DB8008B9ADC /* ScoresStandingsParserTests.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		D1BEB138240C4EEA008B9ADC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1BEB139240C4EF2008B9ADC /* DropDownView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1BEB139240C4EF2008B9ADC /* DropDownView */ = {
+			isa = PBXGroup;
+			children = (
+				D1BEB13A240C4F02008B9ADC /* DropDownViewTests.swift */,
+			);
+			path = DropDownView;
+			sourceTree = "<group>";
+		};
 		D1D90F6B240BB0AB003D7E18 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +343,10 @@
 		D1D94609240A9D4100E9CCB8 /* DAZNTests */ = {
 			isa = PBXGroup;
 			children = (
+				D1BEB138240C4EEA008B9ADC /* View */,
+				D1BEB133240C4B44008B9ADC /* Parser */,
+				D1BEB12A240C378D008B9ADC /* Mock */,
+				D1BEB0E3240C2EE0008B9ADC /* Scene */,
 				D1D9460A240A9D4100E9CCB8 /* DAZNTests.swift */,
 				D1D9460C240A9D4100E9CCB8 /* Info.plist */,
 			);
@@ -520,15 +593,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1D90FA0240C0789003D7E18 /* ScoreTableViewCell.xib in Resources */,
+				D1BEB11A240C3632008B9ADC /* Master.storyboard in Resources */,
+				D1BEB102240C3617008B9ADC /* DropDownView.xib in Resources */,
+				D1BEB10A240C361F008B9ADC /* News.storyboard in Resources */,
+				D1BEB100240C3617008B9ADC /* DefaultDropDownItemView.xib in Resources */,
+				D1BEB112240C3626008B9ADC /* ScoresStandings.storyboard in Resources */,
 				D1D9465B240ADF0C00E9CCB8 /* scores.xml in Resources */,
-				D1D94628240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */,
-				D1D9463A240ACFA700E9CCB8 /* News.storyboard in Resources */,
-				D1D94662240ADFCB00E9CCB8 /* NewsTableViewCell.xib in Resources */,
-				D1D94669240AEBB400E9CCB8 /* NewsDetail.storyboard in Resources */,
+				D1BEB0EF240C3503008B9ADC /* NewsTableViewCell.xib in Resources */,
 				D1D94659240ADF0C00E9CCB8 /* latestnews.xml in Resources */,
-				D1D9461C240A9E1A00E9CCB8 /* DropDownView.xib in Resources */,
-				D1D9463D240ACFD200E9CCB8 /* ScoresStandings.storyboard in Resources */,
+				D1BEB10F240C3626008B9ADC /* ScoreTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,43 +661,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1D94640240AD00E00E9CCB8 /* NewsBuilder.swift in Sources */,
-				D1D90F81240BDB6F003D7E18 /* MasterBuilder.swift in Sources */,
-				D1D90F99240BFAB3003D7E18 /* ScoresStandingsPresentation.swift in Sources */,
-				D1D9466F240AECAF00E9CCB8 /* NewsDetailBuilder.swift in Sources */,
-				D1D90F90240BF94A003D7E18 /* ScoresStandingsViewModel.swift in Sources */,
-				D1D90F93240BF959003D7E18 /* ScoresStandingsContracts.swift in Sources */,
-				D1D9466C240AEBCD00E9CCB8 /* NewsDetailViewController.swift in Sources */,
-				D1D90F96240BFAA5003D7E18 /* ScorePresentation.swift in Sources */,
-				D1D9462D240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */,
-				D1D90F87240BDB8E003D7E18 /* MasterContracts.swift in Sources */,
-				D1BEB0E2240C1FB3008B9ADC /* String+Date.swift in Sources */,
-				D1D94660240ADFCB00E9CCB8 /* NewsTableViewCell.swift in Sources */,
-				D1D94625240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */,
-				D1D94621240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
-				D1D90F7B240BCEC7003D7E18 /* UIViewController+Loading.swift in Sources */,
-				D1D90F70240BB406003D7E18 /* NewsViewModel.swift in Sources */,
-				D1D94632240AC6D700E9CCB8 /* NewsViewController.swift in Sources */,
-				D1D94655240ADC1800E9CCB8 /* ScoresStandingParser.swift in Sources */,
+				D1BEB124240C3640008B9ADC /* NewsService.swift in Sources */,
+				D1BEB104240C361B008B9ADC /* NewsDetailViewController.swift in Sources */,
+				D1BEB128240C366E008B9ADC /* UIViewController+Alert.swift in Sources */,
+				D1BEB117240C362E008B9ADC /* MasterBuilder.swift in Sources */,
+				D1BEB106240C361B008B9ADC /* NewsDetailContracts.swift in Sources */,
+				D1BEB108240C361F008B9ADC /* NewsTableViewCell.swift in Sources */,
+				D1BEB126240C366E008B9ADC /* UIImageView+URL.swift in Sources */,
+				D1BEB0E8240C32F2008B9ADC /* NewsViewModelTests.swift in Sources */,
+				D1BEB119240C362E008B9ADC /* MasterContracts.swift in Sources */,
+				D1BEB101240C3617008B9ADC /* DropDownView.swift in Sources */,
+				D1BEB0FE240C3614008B9ADC /* AppContainer.swift in Sources */,
+				D1BEB10D240C361F008B9ADC /* NewsViewModel.swift in Sources */,
+				D1BEB11E240C3639008B9ADC /* Score.swift in Sources */,
+				D1BEB11F240C3639008B9ADC /* ScoresStandings.swift in Sources */,
+				D1BEB122240C363C008B9ADC /* Result.swift in Sources */,
+				D1BEB12E240C3F99008B9ADC /* NewsViewControllerTests.swift in Sources */,
+				D1BEB113240C3626008B9ADC /* ScoresStandingsBuilder.swift in Sources */,
+				D1BEB103240C3617008B9ADC /* DropDownItem.swift in Sources */,
+				D1BEB0FF240C3617008B9ADC /* DefaultDropDownItemView.swift in Sources */,
+				D1BEB130240C4860008B9ADC /* MockNewsFailureService.swift in Sources */,
+				D1BEB0FA240C360F008B9ADC /* NewsPresentation.swift in Sources */,
+				D1BEB12C240C37A0008B9ADC /* MockNewsSuccessService.swift in Sources */,
+				D1BEB123240C363C008B9ADC /* Error.swift in Sources */,
+				D1BEB135240C4B50008B9ADC /* NewsParserTests.swift in Sources */,
+				D1BEB137240C4DB8008B9ADC /* ScoresStandingsParserTests.swift in Sources */,
 				D1D9460B240A9D4100E9CCB8 /* DAZNTests.swift in Sources */,
-				D1D94677240B92A200E9CCB8 /* NewsService.swift in Sources */,
-				D1D9461E240A9E1A00E9CCB8 /* DropDownView.swift in Sources */,
-				D1D94635240AC6E500E9CCB8 /* ScoresStandingsViewController.swift in Sources */,
-				D1D9467D240B941600E9CCB8 /* Error.swift in Sources */,
-				D1D94648240ADB6F00E9CCB8 /* News.swift in Sources */,
-				D1D94652240ADC0500E9CCB8 /* NewsParser.swift in Sources */,
-				D1D90F7E240BD66A003D7E18 /* UIViewController+Alert.swift in Sources */,
-				D1D90F75240BB66B003D7E18 /* NewsPresentation.swift in Sources */,
-				D1D9464B240ADBA800E9CCB8 /* Score.swift in Sources */,
-				D1D90F84240BDB7C003D7E18 /* MasterViewModel.swift in Sources */,
-				D1BEB0DC240C0DBA008B9ADC /* ScoreTableViewCellModel.swift in Sources */,
-				D1D94680240BA48000E9CCB8 /* ScoresStandingsService.swift in Sources */,
-				D1D9464E240ADBCB00E9CCB8 /* ScoresStandings.swift in Sources */,
-				D1D90F9E240C0789003D7E18 /* ScoreTableViewCell.swift in Sources */,
-				D1D9467A240B937900E9CCB8 /* Result.swift in Sources */,
-				D1D90F78240BBC15003D7E18 /* NewsDetailViewModel.swift in Sources */,
-				D1D94674240B909100E9CCB8 /* UIImageView+URL.swift in Sources */,
-				D1D94643240AD09900E9CCB8 /* ScoresStandingsBuilder.swift in Sources */,
+				D1BEB120240C363C008B9ADC /* NewsParser.swift in Sources */,
+				D1BEB114240C3626008B9ADC /* ScoresStandingsViewModel.swift in Sources */,
+				D1BEB110240C3626008B9ADC /* ScoreTableViewCellModel.swift in Sources */,
+				D1BEB13B240C4F02008B9ADC /* DropDownViewTests.swift in Sources */,
+				D1BEB127240C366E008B9ADC /* UIViewController+Loading.swift in Sources */,
+				D1BEB121240C363C008B9ADC /* ScoresStandingParser.swift in Sources */,
+				D1BEB0FD240C3614008B9ADC /* AppDelegate.swift in Sources */,
+				D1BEB115240C3626008B9ADC /* ScoresStandingsContracts.swift in Sources */,
+				D1BEB129240C366E008B9ADC /* String+Date.swift in Sources */,
+				D1BEB11D240C3639008B9ADC /* News.swift in Sources */,
+				D1BEB10B240C361F008B9ADC /* NewsBuilder.swift in Sources */,
+				D1BEB10C240C361F008B9ADC /* NewsContracts.swift in Sources */,
+				D1BEB109240C361F008B9ADC /* NewsViewController.swift in Sources */,
+				D1BEB111240C3626008B9ADC /* ScoresStandingsViewController.swift in Sources */,
+				D1BEB118240C362E008B9ADC /* MasterViewModel.swift in Sources */,
+				D1BEB10E240C3626008B9ADC /* ScoreTableViewCell.swift in Sources */,
+				D1BEB0FC240C360F008B9ADC /* ScoresStandingsPresentation.swift in Sources */,
+				D1BEB116240C362E008B9ADC /* MasterViewController.swift in Sources */,
+				D1BEB125240C3640008B9ADC /* ScoresStandingsService.swift in Sources */,
+				D1BEB107240C361B008B9ADC /* NewsDetailViewModel.swift in Sources */,
+				D1BEB105240C361B008B9ADC /* NewsDetailBuilder.swift in Sources */,
+				D1BEB0FB240C360F008B9ADC /* ScorePresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

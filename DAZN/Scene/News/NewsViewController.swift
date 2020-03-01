@@ -41,6 +41,8 @@ extension NewsViewController: NewsViewModelDelegate {
         case .showNews(let presentations):
             self.presentations = presentations
             tableView.reloadData()
+        case .showError(let error):
+            showAlert(message: error.localizedDescription)
         }
     }
     
@@ -68,7 +70,7 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 88
     }
-    //TODO: Use Router
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.selectNews(at: indexPath.row)
     }

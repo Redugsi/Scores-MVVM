@@ -17,6 +17,7 @@ protocol NewsViewModelProtocol {
 enum NewsViewModelOutput {
     case showNews([NewsPresentation])
     case setLoading(Bool)
+    case showError(Error)
 }
 
 enum NewsViewRoute {
