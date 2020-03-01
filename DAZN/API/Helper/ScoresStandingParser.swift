@@ -31,23 +31,22 @@ extension ScoresStandingParser: XMLParserDelegate {
     
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         
-        if elementName == "gsmrs" {
+        switch elementName {
+        case "gsmrs":
             currentScoreStanding = ScoresStandings()
-        }
-        
-        if elementName == "parameter" {
+        case "parameter":
             if attributeDict["name"] == "date", let date = attributeDict["value"] {
                 currentScoreStanding?.date = date.trimmingCharacters(in: .whitespacesAndNewlines)
             }
-        }
-        
-        if elementName == "match" {
+        case "match":
             var currentScore = Score()
             currentScore.awayTeam = attributeDict["team_B_name"]?.trimmingCharacters(in: .whitespacesAndNewlines)
             currentScore.awayTeamScore = attributeDict["fs_B"]?.trimmingCharacters(in: .whitespacesAndNewlines)
             currentScore.homeTeam = attributeDict["team_A_name"]?.trimmingCharacters(in: .whitespacesAndNewlines)
             currentScore.homeTeamScore = attributeDict["fs_A"]?.trimmingCharacters(in: .whitespacesAndNewlines)
             currentScoreStanding?.scores.append(currentScore)
+        default:
+            break
         }
     }
 }

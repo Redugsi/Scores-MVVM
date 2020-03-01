@@ -32,49 +32,42 @@ final class NewsParser: NSObject {
 extension NewsParser: XMLParserDelegate {
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         xmlText = ""
-        if elementName == "item" {
-            currentNews = News()
-        }
         
-        if elementName == "enclosure" {
+        switch elementName {
+        case "item":
+            currentNews = News()
+        case "enclosure":
             if let imagePath = attributeDict["url"] {
-                currentNews?.imagePath = imagePath
-            }
+                 currentNews?.imagePath = imagePath
+             }
+        default:
+            break
         }
     }
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         
-        if elementName == "guid" {
+        switch elementName {
+        case "guid":
             if let guid = Int(xmlText){
                 currentNews?.guid = guid
             }
-        }
-        
-        if elementName == "title" {
+        case "title":
             currentNews?.title = xmlText.trimmingCharacters(in: .whitespacesAndNewlines)
-        }
-        
-        if elementName == "pubDate" {
+        case "pubDate":
             currentNews?.pubDate = xmlText.trimmingCharacters(in: .whitespacesAndNewlines)
-        }
-        
-        if elementName == "description" {
+        case "description":
             currentNews?.description = xmlText.trimmingCharacters(in: .whitespacesAndNewlines)
-        }
-        
-        if elementName == "link" {
+        case "link":
             currentNews?.link = xmlText.trimmingCharacters(in: .whitespacesAndNewlines)
-        }
-        
-        if elementName == "category" {
+        case "category":
             currentNews?.category = xmlText.trimmingCharacters(in: .whitespacesAndNewlines)
-        }
-        
-        if elementName == "item" {
+        case "item":
             if let news = currentNews {
-                self.news.append(news)
-            }
+                  self.news.append(news)
+              }
+        default:
+            break
         }
     }
     
