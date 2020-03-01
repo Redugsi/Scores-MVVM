@@ -17,7 +17,7 @@ public class ScoresStandingsService: ScoresStandingsServiceProtocol {
         let urlString = "http://www.mobilefeeds.performgroup.com/utilities/interviews/techtest/scores.xml"
         let request = URLRequest(url: URL(string: urlString)!)
         let task = URLSession.shared.dataTask(with: request, completionHandler:{ (data, response, error) in
-            
+             
             if let error = error {
                 completion(.failure(Error.networkError(internal: error)))
                 return

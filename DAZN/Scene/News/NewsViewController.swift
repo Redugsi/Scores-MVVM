@@ -11,12 +11,19 @@ import UIKit
 final class NewsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var newses: [News] = []
+    
+    var viewModel: NewsViewModelProtocol! {
+        didSet {
+            viewModel.delegate = self
+        }
+    }
+    
+    var presentations: [NewsPresentation] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        parseNews()
+        viewModel.loadNews()
     }
     
     private func setupTableView() {
@@ -24,39 +31,41 @@ final class NewsViewController: UIViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: "NewsTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsTableViewCell")
     }
-    
-    private func parseNews() {
-        do {
-            if let xmlUrl = Bundle.main.url(forResource: "latestnews", withExtension: "xml") {
-                let xml = try String(contentsOf: xmlUrl)
-                let parser = NewsParser(with: xml.data(using: .utf8)!)
-                self.newses = parser.parse()
-                tableView.reloadData()
-            }
-            
-        }catch {
-            print(error)
+}
+
+extension NewsViewController: NewsViewModelDelegate {
+    func handleViewModelOutput(_ output: NewsViewModelOutput) {
+        switch output {
+        case .setLoading(let isLoading):
+            UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+        case .showNews(let presentations):
+            self.presentations = presentations
+            tableView.reloadData()
         }
+    }
+    
+    func navigate(to route: NewsViewRoute) {
+        
     }
 }
 
 extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newses.count
+        return presentations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell") as! NewsTableViewCell
-        let news = newses[indexPath.row]
-        cell.viewModel = NewsTableViewCellModel(title: news.title ?? "", date: news.pubDate ?? "", image: "perform")
+        let presentation = presentations[indexPath.row]
+        cell.viewModel = presentation
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 88
     }
-    //TODO: Navigation Controller
+    //TODO: Use Router
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.show(NewsDetailBuilder.build(), sender: self)
     }

@@ -13,6 +13,7 @@ final class NewsBuilder {
     static func build() -> NewsViewController {
         let storyboard = UIStoryboard(name: "News", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "NewsViewController") as! NewsViewController
+        viewController.viewModel = NewsViewModel(service: app.newsService)
         return viewController
     }
 }

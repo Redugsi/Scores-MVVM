@@ -9,10 +9,10 @@
 import UIKit
 
 extension UIImageView {
-    //TODO: Dont Use AppDelegate
+    
     func loadImage(urlString: String) {
         
-        if let cacheImage = AppDelegate.imageCache.object(forKey: urlString as AnyObject) as? UIImage {
+        if let cacheImage = app.imageCache.object(forKey: urlString as AnyObject) as? UIImage {
             self.image = cacheImage
             return
         }
@@ -28,7 +28,7 @@ extension UIImageView {
             guard let data = data else { return }
             guard let image = UIImage(data: data) else { return }
             
-            AppDelegate.imageCache.setObject(image, forKey: urlString as AnyObject)
+            app.imageCache.setObject(image, forKey: urlString as AnyObject)
             DispatchQueue.main.async {
                 self.image = image
             }

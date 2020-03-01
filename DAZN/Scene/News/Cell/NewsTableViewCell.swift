@@ -14,7 +14,7 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-    var viewModel: NewsTableViewCellModel? {
+    var viewModel: NewsPresentation? {
         didSet {
             if let viewModel = viewModel {
                 initView(with: viewModel)
@@ -22,7 +22,7 @@ class NewsTableViewCell: UITableViewCell {
         }
     }
     
-    private func initView(with viewModel: NewsTableViewCellModel) {
+    private func initView(with viewModel: NewsPresentation) {
         titleLabel.text = viewModel.title
         dateLabel.text = viewModel.date
         
