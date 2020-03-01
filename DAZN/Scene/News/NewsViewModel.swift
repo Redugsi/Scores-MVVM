@@ -29,13 +29,16 @@ final class NewsViewModel: NewsViewModelProtocol {
                 let presentations = news.map { NewsPresentation(imagePath: $0.imagePath ?? "", title: $0.title ?? "", date: $0.pubDate ?? "")}
                 self.notify(.showNews(presentations))
             case .failure(let error):
+                //TODO: Error handle
                 print(error)
             }
         })
     }
     
     func selectNews(at index: Int) {
-        
+        let choosedNews = news[index]
+        let detailViewModel = NewsDetailViewModel(news: choosedNews)
+        delegate?.navigate(to: .detail(detailViewModel))
     }
     
     private func notify(_ output: NewsViewModelOutput) {

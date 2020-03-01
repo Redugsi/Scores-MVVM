@@ -9,9 +9,10 @@
 import UIKit
 
 final class NewsDetailBuilder {
-    static func build() -> NewsDetailViewController {
+    static func build(with viewModel: NewsDetailViewModelProtocol) -> NewsDetailViewController {
         let storyboard = UIStoryboard(name: "NewsDetail", bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: "NewsDetailViewController") as NewsDetailViewController
+        viewController.viewModel = viewModel
         return viewController
     }
 }

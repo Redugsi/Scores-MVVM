@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+enum NewsDetailOutput {
+    case showDetail(URLRequest)
+    case showError(NewsDetailError)
+    case dismiss
+}
+
+protocol NewsDetailViewModelDelegate: class {
+    func handleViewModelOutput(_ output: NewsDetailOutput)
+}
+
+protocol NewsDetailViewModelProtocol {
+    var delegate: NewsDetailViewModelDelegate? { get set }
+    func loadNews()
+    func done()
+}

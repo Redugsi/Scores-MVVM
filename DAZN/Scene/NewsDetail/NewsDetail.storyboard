@@ -37,10 +37,19 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="rcT-WB-UDV">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="NWi-MN-cTZ"/>
+                                    <constraint firstAttribute="width" constant="20" id="xqe-lv-4gx"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.96862655880000004" green="0.96475034950000005" blue="0.96454447509999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rcT-WB-UDV" firstAttribute="centerX" secondItem="xKB-3W-iI3" secondAttribute="centerX" id="5O0-dq-Skd"/>
                             <constraint firstItem="SXG-XV-RxI" firstAttribute="leading" secondItem="bCo-DE-Mgx" secondAttribute="leading" id="5if-DU-lax"/>
+                            <constraint firstItem="rcT-WB-UDV" firstAttribute="centerY" secondItem="xKB-3W-iI3" secondAttribute="centerY" id="A6X-Ii-HjX"/>
                             <constraint firstItem="Gig-TG-Mk6" firstAttribute="top" secondItem="SXG-XV-RxI" secondAttribute="bottom" id="LB5-fZ-Qcp"/>
                             <constraint firstItem="SXG-XV-RxI" firstAttribute="trailing" secondItem="bCo-DE-Mgx" secondAttribute="trailing" id="M2E-rl-kxJ"/>
                             <constraint firstItem="bCo-DE-Mgx" firstAttribute="trailing" secondItem="Gig-TG-Mk6" secondAttribute="trailing" id="Nr5-9n-4gf"/>
@@ -51,6 +60,7 @@
                         <viewLayoutGuide key="safeArea" id="bCo-DE-Mgx"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="rcT-WB-UDV" id="qay-2o-xHs"/>
                         <outlet property="webView" destination="Gig-TG-Mk6" id="ZXN-EO-72A"/>
                     </connections>
                 </viewController>

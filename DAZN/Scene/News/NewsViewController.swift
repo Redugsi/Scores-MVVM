@@ -45,7 +45,10 @@ extension NewsViewController: NewsViewModelDelegate {
     }
     
     func navigate(to route: NewsViewRoute) {
-        
+        switch route {
+        case .detail(let viewModel):
+            show(NewsDetailBuilder.build(with: viewModel), sender: self)
+        }
     }
 }
 
@@ -67,6 +70,6 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     //TODO: Use Router
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.show(NewsDetailBuilder.build(), sender: self)
+        viewModel.selectNews(at: indexPath.row)
     }
 }

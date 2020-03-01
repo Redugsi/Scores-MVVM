@@ -20,7 +20,7 @@ enum NewsViewModelOutput {
 }
 
 enum NewsViewRoute {
-    
+    case detail(NewsDetailViewModelProtocol)
 }
 
 protocol NewsViewModelDelegate: class {
