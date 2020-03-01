@@ -9,33 +9,24 @@
 import UIKit
 
 final class MasterViewController: UIViewController {
-
+    
     @IBOutlet weak var dropDownView: DropDownView!
     @IBOutlet weak var containerView: UIView!
-    
-    weak var newsViewController: NewsViewController!
-    weak var scoresStandingsViewController: ScoresStandingsViewController!
-    
+        
+    var viewModel: MasterViewModelProtocol! {
+        didSet {
+            viewModel?.delegate = self
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupChildViewControllers()
         setupDropDownView()
-    }
-    
-    private func setupChildViewControllers() {
-        newsViewController = NewsBuilder.build()
-        scoresStandingsViewController = ScoresStandingsBuilder.build()
-        addViewController(childViewController: scoresStandingsViewController)
-        addViewController(childViewController: newsViewController)
+        viewModel!.loadChildViewControllers()
+        viewModel!.loadDropDownList()
     }
     
     private func setupDropDownView() {
-        let newsViewModel = DefaultDropDownItemViewModel(title: "News")
-        let scoresViewModel = DefaultDropDownItemViewModel(title: "Scores")
-        
-        dropDownView.delegate = self
-        dropDownView.viewModel = DropDownViewModel(dropDownItemViewModels: [.standart(viewModel: newsViewModel),
-                                                                            .standart(viewModel: scoresViewModel)])
+        dropDownView.delegate = self        
         view.bringSubviewToFront(dropDownView)
     }
     
@@ -50,6 +41,20 @@ final class MasterViewController: UIViewController {
 
 extension MasterViewController: DropDownViewDelegate {
     func onItemClicked(type: DropDownItemType, index: Int) {
+        viewModel.dropDownItemSelected(index: index)
+    }
+}
+
+extension MasterViewController: MasterViewModelDelegate {
+    func setChildViewControllers(with viewControllers: [UIViewController]) {
+        viewControllers.forEach { addViewController(childViewController: $0)}
+    }
+    
+    func setDropDownList(with dropDownViewModel: DropDownViewModel) {
+        dropDownView.viewModel = dropDownViewModel
+    }
+    
+    func showChild(at index: Int) {
         for(loopIndex, element) in containerView!.subviews.enumerated() {
             element.isHidden = loopIndex == index
         }

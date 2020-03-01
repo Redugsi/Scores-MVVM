@@ -15,5 +15,4 @@ final class AppContainer {
     let newsService = NewsService()
     let scoresStandingsService = ScoresStandingsService()
     var imageCache = NSCache<AnyObject, AnyObject>()
-
 }

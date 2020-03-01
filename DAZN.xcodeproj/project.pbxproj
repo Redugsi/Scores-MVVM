@@ -20,12 +20,17 @@
 		D1D90F7B240BCEC7003D7E18 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F79240BCEC7003D7E18 /* UIViewController+Loading.swift */; };
 		D1D90F7D240BD66A003D7E18 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7C240BD66A003D7E18 /* UIViewController+Alert.swift */; };
 		D1D90F7E240BD66A003D7E18 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7C240BD66A003D7E18 /* UIViewController+Alert.swift */; };
+		D1D90F80240BDB6F003D7E18 /* MasterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7F240BDB6F003D7E18 /* MasterBuilder.swift */; };
+		D1D90F81240BDB6F003D7E18 /* MasterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F7F240BDB6F003D7E18 /* MasterBuilder.swift */; };
+		D1D90F83240BDB7C003D7E18 /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F82240BDB7C003D7E18 /* MasterViewModel.swift */; };
+		D1D90F84240BDB7C003D7E18 /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F82240BDB7C003D7E18 /* MasterViewModel.swift */; };
+		D1D90F86240BDB8E003D7E18 /* MasterContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F85240BDB8E003D7E18 /* MasterContracts.swift */; };
+		D1D90F87240BDB8E003D7E18 /* MasterContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F85240BDB8E003D7E18 /* MasterContracts.swift */; };
 		D1D945F4240A9D3F00E9CCB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F3240A9D3F00E9CCB8 /* AppDelegate.swift */; };
 		D1D945F6240A9D3F00E9CCB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F5240A9D3F00E9CCB8 /* SceneDelegate.swift */; };
 		D1D945F8240A9D3F00E9CCB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F7240A9D3F00E9CCB8 /* ViewController.swift */; };
-		D1D945FB240A9D3F00E9CCB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D945F9240A9D3F00E9CCB8 /* Main.storyboard */; };
+		D1D945FB240A9D3F00E9CCB8 /* Master.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D945F9240A9D3F00E9CCB8 /* Master.storyboard */; };
 		D1D945FD240A9D4100E9CCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1D945FC240A9D4100E9CCB8 /* Assets.xcassets */; };
-		D1D94600240A9D4100E9CCB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D945FE240A9D4100E9CCB8 /* LaunchScreen.storyboard */; };
 		D1D9460B240A9D4100E9CCB8 /* DAZNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9460A240A9D4100E9CCB8 /* DAZNTests.swift */; };
 		D1D9461B240A9E1A00E9CCB8 /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94619240A9E1A00E9CCB8 /* DropDownView.xib */; };
 		D1D9461C240A9E1A00E9CCB8 /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D94619240A9E1A00E9CCB8 /* DropDownView.xib */; };
@@ -106,13 +111,15 @@
 		D1D90F76240BBC15003D7E18 /* NewsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewModel.swift; sourceTree = "<group>"; };
 		D1D90F79240BCEC7003D7E18 /* UIViewController+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loading.swift"; sourceTree = "<group>"; };
 		D1D90F7C240BD66A003D7E18 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		D1D90F7F240BDB6F003D7E18 /* MasterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterBuilder.swift; sourceTree = "<group>"; };
+		D1D90F82240BDB7C003D7E18 /* MasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
+		D1D90F85240BDB8E003D7E18 /* MasterContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterContracts.swift; sourceTree = "<group>"; };
 		D1D945F0240A9D3F00E9CCB8 /* DAZN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAZN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D945F3240A9D3F00E9CCB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1D945F5240A9D3F00E9CCB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D1D945F7240A9D3F00E9CCB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D1D945FA240A9D3F00E9CCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1D945FA240A9D3F00E9CCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Master.storyboard; sourceTree = "<group>"; };
 		D1D945FC240A9D4100E9CCB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D1D945FF240A9D4100E9CCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1D94601240A9D4100E9CCB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1D94606240A9D4100E9CCB8 /* DAZNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DAZNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D9460A240A9D4100E9CCB8 /* DAZNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAZNTests.swift; sourceTree = "<group>"; };
@@ -222,9 +229,7 @@
 				D1D94656240ADF0C00E9CCB8 /* latestnews.xml */,
 				D1D94657240ADF0C00E9CCB8 /* scores.xml */,
 				D1D945F7240A9D3F00E9CCB8 /* ViewController.swift */,
-				D1D945F9240A9D3F00E9CCB8 /* Main.storyboard */,
 				D1D945FC240A9D4100E9CCB8 /* Assets.xcassets */,
-				D1D945FE240A9D4100E9CCB8 /* LaunchScreen.storyboard */,
 				D1D94601240A9D4100E9CCB8 /* Info.plist */,
 			);
 			path = DAZN;
@@ -281,7 +286,11 @@
 		D1D9462A240AAC2400E9CCB8 /* Master */ = {
 			isa = PBXGroup;
 			children = (
+				D1D945F9240A9D3F00E9CCB8 /* Master.storyboard */,
 				D1D9462B240AAD5E00E9CCB8 /* MasterViewController.swift */,
+				D1D90F7F240BDB6F003D7E18 /* MasterBuilder.swift */,
+				D1D90F82240BDB7C003D7E18 /* MasterViewModel.swift */,
+				D1D90F85240BDB8E003D7E18 /* MasterContracts.swift */,
 			);
 			path = Master;
 			sourceTree = "<group>";
@@ -454,7 +463,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D94668240AEBB400E9CCB8 /* NewsDetail.storyboard in Resources */,
-				D1D94600240A9D4100E9CCB8 /* LaunchScreen.storyboard in Resources */,
 				D1D94639240ACFA700E9CCB8 /* News.storyboard in Resources */,
 				D1D9461B240A9E1A00E9CCB8 /* DropDownView.xib in Resources */,
 				D1D945FD240A9D4100E9CCB8 /* Assets.xcassets in Resources */,
@@ -462,7 +470,7 @@
 				D1D9463C240ACFD200E9CCB8 /* ScoresStandings.storyboard in Resources */,
 				D1D94627240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */,
 				D1D9465A240ADF0C00E9CCB8 /* scores.xml in Resources */,
-				D1D945FB240A9D3F00E9CCB8 /* Main.storyboard in Resources */,
+				D1D945FB240A9D3F00E9CCB8 /* Master.storyboard in Resources */,
 				D1D94658240ADF0C00E9CCB8 /* latestnews.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +504,7 @@
 				D1D945F8240A9D3F00E9CCB8 /* ViewController.swift in Sources */,
 				D1D9461D240A9E1A00E9CCB8 /* DropDownView.swift in Sources */,
 				D1D94634240AC6E500E9CCB8 /* ScoresStandingsViewController.swift in Sources */,
+				D1D90F80240BDB6F003D7E18 /* MasterBuilder.swift in Sources */,
 				D1D94620240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
 				D1D94673240B909100E9CCB8 /* UIImageView+URL.swift in Sources */,
 				D1D90F6F240BB406003D7E18 /* NewsViewModel.swift in Sources */,
@@ -508,6 +517,7 @@
 				D1D94676240B92A200E9CCB8 /* NewsService.swift in Sources */,
 				D1D9462C240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */,
 				D1D94654240ADC1800E9CCB8 /* ScoresStandingParser.swift in Sources */,
+				D1D90F83240BDB7C003D7E18 /* MasterViewModel.swift in Sources */,
 				D1D94679240B937900E9CCB8 /* Result.swift in Sources */,
 				D1D9464A240ADBA800E9CCB8 /* Score.swift in Sources */,
 				D1D94651240ADC0500E9CCB8 /* NewsParser.swift in Sources */,
@@ -517,6 +527,7 @@
 				D1D945F6240A9D3F00E9CCB8 /* SceneDelegate.swift in Sources */,
 				D1D94642240AD09900E9CCB8 /* ScoresStandingsBuilder.swift in Sources */,
 				D1D9465F240ADFCB00E9CCB8 /* NewsTableViewCell.swift in Sources */,
+				D1D90F86240BDB8E003D7E18 /* MasterContracts.swift in Sources */,
 				D1D9463F240AD00E00E9CCB8 /* NewsBuilder.swift in Sources */,
 				D1D94631240AC6D700E9CCB8 /* NewsViewController.swift in Sources */,
 				D1D90F74240BB66B003D7E18 /* NewsPresentation.swift in Sources */,
@@ -529,9 +540,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D94640240AD00E00E9CCB8 /* NewsBuilder.swift in Sources */,
+				D1D90F81240BDB6F003D7E18 /* MasterBuilder.swift in Sources */,
 				D1D9466F240AECAF00E9CCB8 /* NewsDetailBuilder.swift in Sources */,
 				D1D9466C240AEBCD00E9CCB8 /* NewsDetailViewController.swift in Sources */,
 				D1D9462D240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */,
+				D1D90F87240BDB8E003D7E18 /* MasterContracts.swift in Sources */,
 				D1D94660240ADFCB00E9CCB8 /* NewsTableViewCell.swift in Sources */,
 				D1D94625240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */,
 				D1D94621240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
@@ -549,6 +562,7 @@
 				D1D90F7E240BD66A003D7E18 /* UIViewController+Alert.swift in Sources */,
 				D1D90F75240BB66B003D7E18 /* NewsPresentation.swift in Sources */,
 				D1D9464B240ADBA800E9CCB8 /* Score.swift in Sources */,
+				D1D90F84240BDB7C003D7E18 /* MasterViewModel.swift in Sources */,
 				D1D94680240BA48000E9CCB8 /* ScoresStandingsService.swift in Sources */,
 				D1D9464E240ADBCB00E9CCB8 /* ScoresStandings.swift in Sources */,
 				D1D9467A240B937900E9CCB8 /* Result.swift in Sources */,
@@ -569,20 +583,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D1D945F9240A9D3F00E9CCB8 /* Main.storyboard */ = {
+		D1D945F9240A9D3F00E9CCB8 /* Master.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D1D945FA240A9D3F00E9CCB8 /* Base */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D1D945FE240A9D4100E9CCB8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D1D945FF240A9D4100E9CCB8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Master.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
