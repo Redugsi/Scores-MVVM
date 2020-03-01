@@ -25,6 +25,7 @@ class NewsTableViewCell: UITableViewCell {
     private func initView(with viewModel: NewsTableViewCellModel) {
         titleLabel.text = viewModel.title
         dateLabel.text = viewModel.date
+        
     }
     
     override func prepareForReuse() {

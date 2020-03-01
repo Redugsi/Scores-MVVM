@@ -14,6 +14,10 @@ final class NewsParser: NSObject {
     var xmlText = ""
     var currentNews: News?
     
+    public var error: Swift.Error? {
+        return xmlParser?.parserError
+    }
+    
     init(with data: Data) {
         xmlParser = XMLParser(data: data)
     }

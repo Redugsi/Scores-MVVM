@@ -12,6 +12,10 @@ final class ScoresStandingParser: NSObject {
     var xmlParser: XMLParser?
     var currentScoreStanding: ScoresStandings?
     
+    var error: Swift.Error? {
+        return xmlParser?.parserError
+    }
+    
     init(with data: Data) {
         xmlParser = XMLParser(data: data)
     }

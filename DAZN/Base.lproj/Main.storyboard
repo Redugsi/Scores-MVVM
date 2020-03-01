@@ -30,9 +30,9 @@
                         <constraints>
                             <constraint firstItem="frD-Gs-jhL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3kB-Ux-00z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xxd-Zs-ErY" secondAttribute="trailing" id="6cm-SX-hzE"/>
+                            <constraint firstItem="frD-Gs-jhL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="dnI-G2-d2E"/>
                             <constraint firstItem="Xxd-Zs-ErY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="epQ-0b-VFB"/>
                             <constraint firstItem="Xxd-Zs-ErY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="goP-nG-dsp"/>
-                            <constraint firstItem="frD-Gs-jhL" firstAttribute="top" secondItem="Xxd-Zs-ErY" secondAttribute="bottom" id="hrF-sP-5Vn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="frD-Gs-jhL" secondAttribute="bottom" id="ni7-Km-eP9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="frD-Gs-jhL" secondAttribute="trailing" id="qMd-hj-7RJ"/>
                         </constraints>
