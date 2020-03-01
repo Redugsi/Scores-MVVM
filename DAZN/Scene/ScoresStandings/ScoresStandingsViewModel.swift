@@ -8,8 +8,8 @@
 
 import Foundation
 
-class ScoresStandingsViewModel: ScoresStandingsViewModelProtocol {
-    var delegate: ScoresStandingsViewModelDelegate?
+final class ScoresStandingsViewModel: ScoresStandingsViewModelProtocol {
+    weak var delegate: ScoresStandingsViewModelDelegate?
     private let service: ScoresStandingsServiceProtocol
     private var scoresStandings: ScoresStandings?
     private var timer: Timer?

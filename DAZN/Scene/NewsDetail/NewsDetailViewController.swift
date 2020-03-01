@@ -9,9 +9,9 @@
 import UIKit
 import WebKit
 
-class NewsDetailViewController: UIViewController {
+final class NewsDetailViewController: UIViewController {
     
-    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet private weak var webView: WKWebView!
     
     var viewModel: NewsDetailViewModelProtocol! {
         didSet {

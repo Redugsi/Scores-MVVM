@@ -18,8 +18,8 @@ struct DropDownViewModel {
 
 final class DropDownView: UIView {
     
-    @IBOutlet private var contentView: UIView!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet private weak var contentView: UIView!
+    @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet weak var stackView: UIStackView!
     
     let choosedColor = UIColor(named: "color_blue")

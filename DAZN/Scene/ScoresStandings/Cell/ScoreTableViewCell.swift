@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ScoreTableViewCell: UITableViewCell {
+final class ScoreTableViewCell: UITableViewCell {
     
     static let filledBackgroundColor = UIColor(named: "color_gray")
     static let emptyBackgroundColor = UIColor(named: "color_white")
 
-    @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var awayTeamLabel: UILabel!
-    @IBOutlet weak var homeTeamLabel: UILabel!
+    @IBOutlet private weak var scoreLabel: UILabel!
+    @IBOutlet private weak var awayTeamLabel: UILabel!
+    @IBOutlet private weak var homeTeamLabel: UILabel!
     
     var viewModel: ScoreTableViewCellModel? {
         didSet {

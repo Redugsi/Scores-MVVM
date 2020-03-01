@@ -10,8 +10,8 @@ import UIKit
 
 final class ScoresStandingsViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    var scoresStanding: ScoresStandingsPresentation?
+    @IBOutlet private weak var tableView: UITableView!
+    private var scoresStanding: ScoresStandingsPresentation?
     
     public var viewModel: ScoresStandingsViewModelProtocol! {
         didSet{

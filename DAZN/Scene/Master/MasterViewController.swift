@@ -10,8 +10,8 @@ import UIKit
 
 final class MasterViewController: UIViewController {
     
-    @IBOutlet weak var dropDownView: DropDownView!
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet private weak var dropDownView: DropDownView!
+    @IBOutlet private weak var containerView: UIView!
         
     var viewModel: MasterViewModelProtocol! {
         didSet {
