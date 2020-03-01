@@ -26,7 +26,7 @@ public class ScoresStandingsService: ScoresStandingsServiceProtocol {
             guard let data = data else {
                 return
             }
-            
+                        
             let parser = ScoresStandingParser(with: data)
             let scoresStandingModel = parser.parse()
             
@@ -34,7 +34,6 @@ public class ScoresStandingsService: ScoresStandingsServiceProtocol {
                 completion(.failure(.serializationError(internal: parseError)))
                 return
             }
-            
             completion(.success(scoresStandingModel))
         })
         

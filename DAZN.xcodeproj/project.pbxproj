@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1BEB0DB240C0DBA008B9ADC /* ScoreTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB0DA240C0DBA008B9ADC /* ScoreTableViewCellModel.swift */; };
+		D1BEB0DC240C0DBA008B9ADC /* ScoreTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB0DA240C0DBA008B9ADC /* ScoreTableViewCellModel.swift */; };
+		D1BEB0E1240C1FB3008B9ADC /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB0E0240C1FB3008B9ADC /* String+Date.swift */; };
+		D1BEB0E2240C1FB3008B9ADC /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEB0E0240C1FB3008B9ADC /* String+Date.swift */; };
 		D1D90F68240BAA0D003D7E18 /* NewsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F67240BAA0D003D7E18 /* NewsContracts.swift */; };
 		D1D90F6A240BAA1E003D7E18 /* NewsDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F69240BAA1E003D7E18 /* NewsDetailContracts.swift */; };
 		D1D90F6D240BB0F1003D7E18 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F6C240BB0F1003D7E18 /* AppContainer.swift */; };
@@ -26,6 +30,18 @@
 		D1D90F84240BDB7C003D7E18 /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F82240BDB7C003D7E18 /* MasterViewModel.swift */; };
 		D1D90F86240BDB8E003D7E18 /* MasterContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F85240BDB8E003D7E18 /* MasterContracts.swift */; };
 		D1D90F87240BDB8E003D7E18 /* MasterContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F85240BDB8E003D7E18 /* MasterContracts.swift */; };
+		D1D90F8F240BF94A003D7E18 /* ScoresStandingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F8E240BF94A003D7E18 /* ScoresStandingsViewModel.swift */; };
+		D1D90F90240BF94A003D7E18 /* ScoresStandingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F8E240BF94A003D7E18 /* ScoresStandingsViewModel.swift */; };
+		D1D90F92240BF959003D7E18 /* ScoresStandingsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F91240BF959003D7E18 /* ScoresStandingsContracts.swift */; };
+		D1D90F93240BF959003D7E18 /* ScoresStandingsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F91240BF959003D7E18 /* ScoresStandingsContracts.swift */; };
+		D1D90F95240BFAA5003D7E18 /* ScorePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F94240BFAA5003D7E18 /* ScorePresentation.swift */; };
+		D1D90F96240BFAA5003D7E18 /* ScorePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F94240BFAA5003D7E18 /* ScorePresentation.swift */; };
+		D1D90F98240BFAB3003D7E18 /* ScoresStandingsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F97240BFAB3003D7E18 /* ScoresStandingsPresentation.swift */; };
+		D1D90F99240BFAB3003D7E18 /* ScoresStandingsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F97240BFAB3003D7E18 /* ScoresStandingsPresentation.swift */; };
+		D1D90F9D240C0789003D7E18 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F9B240C0789003D7E18 /* ScoreTableViewCell.swift */; };
+		D1D90F9E240C0789003D7E18 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D90F9B240C0789003D7E18 /* ScoreTableViewCell.swift */; };
+		D1D90F9F240C0789003D7E18 /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D90F9C240C0789003D7E18 /* ScoreTableViewCell.xib */; };
+		D1D90FA0240C0789003D7E18 /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D90F9C240C0789003D7E18 /* ScoreTableViewCell.xib */; };
 		D1D945F4240A9D3F00E9CCB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F3240A9D3F00E9CCB8 /* AppDelegate.swift */; };
 		D1D945F6240A9D3F00E9CCB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F5240A9D3F00E9CCB8 /* SceneDelegate.swift */; };
 		D1D945F8240A9D3F00E9CCB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D945F7240A9D3F00E9CCB8 /* ViewController.swift */; };
@@ -103,6 +119,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1BEB0DA240C0DBA008B9ADC /* ScoreTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCellModel.swift; sourceTree = "<group>"; };
+		D1BEB0E0240C1FB3008B9ADC /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		D1D90F67240BAA0D003D7E18 /* NewsContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContracts.swift; sourceTree = "<group>"; };
 		D1D90F69240BAA1E003D7E18 /* NewsDetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailContracts.swift; sourceTree = "<group>"; };
 		D1D90F6C240BB0F1003D7E18 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
@@ -114,6 +132,12 @@
 		D1D90F7F240BDB6F003D7E18 /* MasterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterBuilder.swift; sourceTree = "<group>"; };
 		D1D90F82240BDB7C003D7E18 /* MasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
 		D1D90F85240BDB8E003D7E18 /* MasterContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterContracts.swift; sourceTree = "<group>"; };
+		D1D90F8E240BF94A003D7E18 /* ScoresStandingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresStandingsViewModel.swift; sourceTree = "<group>"; };
+		D1D90F91240BF959003D7E18 /* ScoresStandingsContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresStandingsContracts.swift; sourceTree = "<group>"; };
+		D1D90F94240BFAA5003D7E18 /* ScorePresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePresentation.swift; sourceTree = "<group>"; };
+		D1D90F97240BFAB3003D7E18 /* ScoresStandingsPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresStandingsPresentation.swift; sourceTree = "<group>"; };
+		D1D90F9B240C0789003D7E18 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		D1D90F9C240C0789003D7E18 /* ScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreTableViewCell.xib; sourceTree = "<group>"; };
 		D1D945F0240A9D3F00E9CCB8 /* DAZN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAZN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D945F3240A9D3F00E9CCB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1D945F5240A9D3F00E9CCB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,8 +219,20 @@
 			isa = PBXGroup;
 			children = (
 				D1D90F73240BB66B003D7E18 /* NewsPresentation.swift */,
+				D1D90F94240BFAA5003D7E18 /* ScorePresentation.swift */,
+				D1D90F97240BFAB3003D7E18 /* ScoresStandingsPresentation.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D1D90F9A240C076E003D7E18 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D1D90F9B240C0789003D7E18 /* ScoreTableViewCell.swift */,
+				D1D90F9C240C0789003D7E18 /* ScoreTableViewCell.xib */,
+				D1BEB0DA240C0DBA008B9ADC /* ScoreTableViewCellModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		D1D945E7240A9D3F00E9CCB8 = {
@@ -298,9 +334,12 @@
 		D1D9462E240AC5F500E9CCB8 /* ScoresStandings */ = {
 			isa = PBXGroup;
 			children = (
+				D1D90F9A240C076E003D7E18 /* Cell */,
 				D1D94633240AC6E500E9CCB8 /* ScoresStandingsViewController.swift */,
 				D1D9463B240ACFD200E9CCB8 /* ScoresStandings.storyboard */,
 				D1D94641240AD09900E9CCB8 /* ScoresStandingsBuilder.swift */,
+				D1D90F8E240BF94A003D7E18 /* ScoresStandingsViewModel.swift */,
+				D1D90F91240BF959003D7E18 /* ScoresStandingsContracts.swift */,
 			);
 			path = ScoresStandings;
 			sourceTree = "<group>";
@@ -377,6 +416,7 @@
 				D1D94672240B909100E9CCB8 /* UIImageView+URL.swift */,
 				D1D90F79240BCEC7003D7E18 /* UIViewController+Loading.swift */,
 				D1D90F7C240BD66A003D7E18 /* UIViewController+Alert.swift */,
+				D1BEB0E0240C1FB3008B9ADC /* String+Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -472,6 +512,7 @@
 				D1D9465A240ADF0C00E9CCB8 /* scores.xml in Resources */,
 				D1D945FB240A9D3F00E9CCB8 /* Master.storyboard in Resources */,
 				D1D94658240ADF0C00E9CCB8 /* latestnews.xml in Resources */,
+				D1D90F9F240C0789003D7E18 /* ScoreTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +520,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D90FA0240C0789003D7E18 /* ScoreTableViewCell.xib in Resources */,
 				D1D9465B240ADF0C00E9CCB8 /* scores.xml in Resources */,
 				D1D94628240AA65B00E9CCB8 /* DefaultDropDownItemView.xib in Resources */,
 				D1D9463A240ACFA700E9CCB8 /* News.storyboard in Resources */,
@@ -507,10 +549,13 @@
 				D1D90F80240BDB6F003D7E18 /* MasterBuilder.swift in Sources */,
 				D1D94620240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
 				D1D94673240B909100E9CCB8 /* UIImageView+URL.swift in Sources */,
+				D1D90F9D240C0789003D7E18 /* ScoreTableViewCell.swift in Sources */,
 				D1D90F6F240BB406003D7E18 /* NewsViewModel.swift in Sources */,
 				D1D9466E240AECAF00E9CCB8 /* NewsDetailBuilder.swift in Sources */,
 				D1D945F4240A9D3F00E9CCB8 /* AppDelegate.swift in Sources */,
+				D1D90F92240BF959003D7E18 /* ScoresStandingsContracts.swift in Sources */,
 				D1D90F77240BBC15003D7E18 /* NewsDetailViewModel.swift in Sources */,
+				D1BEB0DB240C0DBA008B9ADC /* ScoreTableViewCellModel.swift in Sources */,
 				D1D9464D240ADBCB00E9CCB8 /* ScoresStandings.swift in Sources */,
 				D1D94647240ADB6F00E9CCB8 /* News.swift in Sources */,
 				D1D90F6D240BB0F1003D7E18 /* AppContainer.swift in Sources */,
@@ -520,17 +565,21 @@
 				D1D90F83240BDB7C003D7E18 /* MasterViewModel.swift in Sources */,
 				D1D94679240B937900E9CCB8 /* Result.swift in Sources */,
 				D1D9464A240ADBA800E9CCB8 /* Score.swift in Sources */,
+				D1D90F8F240BF94A003D7E18 /* ScoresStandingsViewModel.swift in Sources */,
 				D1D94651240ADC0500E9CCB8 /* NewsParser.swift in Sources */,
+				D1BEB0E1240C1FB3008B9ADC /* String+Date.swift in Sources */,
 				D1D9467C240B941600E9CCB8 /* Error.swift in Sources */,
 				D1D90F7D240BD66A003D7E18 /* UIViewController+Alert.swift in Sources */,
 				D1D90F7A240BCEC7003D7E18 /* UIViewController+Loading.swift in Sources */,
 				D1D945F6240A9D3F00E9CCB8 /* SceneDelegate.swift in Sources */,
 				D1D94642240AD09900E9CCB8 /* ScoresStandingsBuilder.swift in Sources */,
+				D1D90F98240BFAB3003D7E18 /* ScoresStandingsPresentation.swift in Sources */,
 				D1D9465F240ADFCB00E9CCB8 /* NewsTableViewCell.swift in Sources */,
 				D1D90F86240BDB8E003D7E18 /* MasterContracts.swift in Sources */,
 				D1D9463F240AD00E00E9CCB8 /* NewsBuilder.swift in Sources */,
 				D1D94631240AC6D700E9CCB8 /* NewsViewController.swift in Sources */,
 				D1D90F74240BB66B003D7E18 /* NewsPresentation.swift in Sources */,
+				D1D90F95240BFAA5003D7E18 /* ScorePresentation.swift in Sources */,
 				D1D9466B240AEBCD00E9CCB8 /* NewsDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,10 +590,15 @@
 			files = (
 				D1D94640240AD00E00E9CCB8 /* NewsBuilder.swift in Sources */,
 				D1D90F81240BDB6F003D7E18 /* MasterBuilder.swift in Sources */,
+				D1D90F99240BFAB3003D7E18 /* ScoresStandingsPresentation.swift in Sources */,
 				D1D9466F240AECAF00E9CCB8 /* NewsDetailBuilder.swift in Sources */,
+				D1D90F90240BF94A003D7E18 /* ScoresStandingsViewModel.swift in Sources */,
+				D1D90F93240BF959003D7E18 /* ScoresStandingsContracts.swift in Sources */,
 				D1D9466C240AEBCD00E9CCB8 /* NewsDetailViewController.swift in Sources */,
+				D1D90F96240BFAA5003D7E18 /* ScorePresentation.swift in Sources */,
 				D1D9462D240AAD5E00E9CCB8 /* MasterViewController.swift in Sources */,
 				D1D90F87240BDB8E003D7E18 /* MasterContracts.swift in Sources */,
+				D1BEB0E2240C1FB3008B9ADC /* String+Date.swift in Sources */,
 				D1D94660240ADFCB00E9CCB8 /* NewsTableViewCell.swift in Sources */,
 				D1D94625240AA65100E9CCB8 /* DefaultDropDownItemView.swift in Sources */,
 				D1D94621240A9FDD00E9CCB8 /* DropDownItem.swift in Sources */,
@@ -563,8 +617,10 @@
 				D1D90F75240BB66B003D7E18 /* NewsPresentation.swift in Sources */,
 				D1D9464B240ADBA800E9CCB8 /* Score.swift in Sources */,
 				D1D90F84240BDB7C003D7E18 /* MasterViewModel.swift in Sources */,
+				D1BEB0DC240C0DBA008B9ADC /* ScoreTableViewCellModel.swift in Sources */,
 				D1D94680240BA48000E9CCB8 /* ScoresStandingsService.swift in Sources */,
 				D1D9464E240ADBCB00E9CCB8 /* ScoresStandings.swift in Sources */,
+				D1D90F9E240C0789003D7E18 /* ScoreTableViewCell.swift in Sources */,
 				D1D9467A240B937900E9CCB8 /* Result.swift in Sources */,
 				D1D90F78240BBC15003D7E18 /* NewsDetailViewModel.swift in Sources */,
 				D1D94674240B909100E9CCB8 /* UIImageView+URL.swift in Sources */,

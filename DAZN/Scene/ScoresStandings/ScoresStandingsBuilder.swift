@@ -12,6 +12,7 @@ final class ScoresStandingsBuilder {
     static func build() -> ScoresStandingsViewController {
         let storyboard = UIStoryboard(name: "ScoresStandings", bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: "ScoresStandingsViewController") as! ScoresStandingsViewController
+        viewController.viewModel = ScoresStandingsViewModel(service: app.scoresStandingsService)
         return viewController
     }
 }
