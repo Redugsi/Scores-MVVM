@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol DropDownViewDelegate {
+protocol DropDownViewDelegate: class {
     func onItemClicked(type: DropDownItemType, index: Int)
 }
 
@@ -24,7 +24,7 @@ final class DropDownView: UIView {
     
     let choosedColor = UIColor(named: "color_blue")
     
-    var delegate: DropDownViewDelegate?
+    weak var delegate: DropDownViewDelegate?
     
     var viewModel: DropDownViewModel? {
         didSet {
